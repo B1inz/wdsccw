@@ -1,14 +1,11 @@
 "use client";
 import React from "react";
-import Navbar from "./header/header";
-import Footer from "./footer/footer";
+import styles from "./page.module.css"
 
 export default function Home() {
     return (
-        <div>
-            <Navbar/>
-            <Footer/>
-            
+        <div>   
+            <img src="././temp/home.png" className={styles.homeImg}></img>     
         </div>
     );
 }
