@@ -1,9 +1,11 @@
 "use client";
 import React from "react";
+import Navbar from "./header/header";
 
 export default function Home() {
     return (
         <div>
+            <Navbar/>
             {/* Newsletter Section */}
             <section style={styles.newsletterSection}>
                 <div style={styles.container}>
