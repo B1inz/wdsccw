@@ -72,8 +72,8 @@ export default function Home() {
 
             <p className={`${styles.aboutMeText}`}>
             <span className={styles.aboutMeBigText}>David Ferreira </span> 
-            is the City Councillor for Ward 13 <br></br>
-            in London, Ontario. With a background rooted in <br></br>
+            is the City Councillor for Ward<br></br>
+            13 in London, Ontario. With a background rooted in <br></br>
             family values, having grown up in an entrepreneurial <br></br>
             environment with his immigrant parents. With <br></br>
             experience in both the corporate world and the gig <br></br>
