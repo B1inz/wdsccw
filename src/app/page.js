@@ -24,7 +24,7 @@ export default function Home() {
                 strokeLinejoin="round"
               />
             </svg>
-            <p>Volunteer</p>
+            <p>VOLUNTEER</p>
           </div>
         </div>
         <div className={`${styles.linkButtons} ${styles.donateButton}`}>
@@ -44,7 +44,7 @@ export default function Home() {
                 strokeLinejoin="round"
               />
             </svg>
-            <p>Donate</p>
+            <p>DONATE</p>
           </div>
         </div>
         <div className={`${styles.linkButtons} ${styles.contactButton}`}>
@@ -64,11 +64,26 @@ export default function Home() {
                 strokeLinejoin="round"
               />
             </svg>
-            <p>Contact</p>
+            <p>CONTACT</p>
           </div>
         </div>
       </section>
-        <div style={{height: "1000px"}}></div>
+        <div className={`${styles.aboutMeContainer}`}>
+
+            <p className={`${styles.aboutMeText}`}>
+            <span className={styles.aboutMeBigText}>David Ferreira </span> 
+            is the City Councillor for Ward 13 <br></br>
+            in London, Ontario. With a background rooted in <br></br>
+            family values, having grown up in an entrepreneurial <br></br>
+            environment with his immigrant parents. With <br></br>
+            experience in both the corporate world and the gig <br></br>
+            economy, Ferreira is committed to creating a sustainable, <br></br>
+            inclusive, and affordable community. <br></br>
+            
+            
+             </p>
+            <img className={styles.aboutMeImage} src="././councillorPhoto.png"></img>
+        </div>
       <section>
 
 
