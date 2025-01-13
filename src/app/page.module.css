@@ -1,3 +1,51 @@
+
+
+
 .homeImg {
     width: 100%;
+}
+
+.topSectionGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr auto;
+
+}
+
+.cityImage {
+    grid-column: span 3;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.linkButtons {
+    height:125px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.linkButtonText {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 0px;
+    align-items: center;
+}   
+
+
+.contactButton{
+    background-color: #145899;
+}
+
+.donateButton {
+    background-color: #FF8D3D;
+}
+
+.volunteerButton {
+    background-color: #4796E3;
 }

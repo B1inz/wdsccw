@@ -1,6 +1,54 @@
 /*!*******************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/app/page.module.css ***!
   \*******************************************************************************************************************************************************************************************************************************************************************/
+
+
+
 .page_homeImg__A1lQl {
     width: 100%;
+}
+
+.page_topSectionGrid__hOGIT {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr auto;
+
+}
+
+.page_cityImage__CyQcY {
+    grid-column: span 3;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.page_linkButtons__6Cqpc {
+    height:125px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page_linkButtonText__w388h {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 0px;
+    align-items: center;
+}   
+
+
+.page_contactButton__dZrXS{
+    background-color: #145899;
+}
+
+.page_donateButton__br0lQ {
+    background-color: #FF8D3D;
+}
+
+.page_volunteerButton__yvX4G {
+    background-color: #4796E3;
 }
