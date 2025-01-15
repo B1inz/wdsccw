@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div>
       <section className={styles.topSectionGrid}>
-        <img className={styles.cityImage} src="././london-skyline.png"></img>
+        <img className={styles.cityImage} src="././london-skyline.PNG"></img>
         <div className={`${styles.linkButtons} ${styles.volunteerButton}`}>
           <div className={styles.linkButtonText}>
             <svg
