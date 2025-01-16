@@ -6,7 +6,34 @@ export default function Home() {
   return (
     <div>
       <section className={styles.topSectionGrid}>
-        <img className={styles.cityImage} src="././london-skyline.png"></img>
+        
+
+        <div className= {styles.topBannerContainer}>
+
+          <div className = {styles.bannerText}>
+
+            <h2 className = {styles.bannerTextHeading}>
+              Passionate about <br/> building an affordable, <br/> sustainable, and <br/> connected London.
+            </h2>
+
+            <div className= {styles.bannerJoin}> 
+              <p className= {styles.bannerJoinText} >Join David's Campaign</p> 
+              <form className= {styles.bannerJoinForm}>
+                <input className= {styles.bannerJoinFormInput}></input>
+                <button className= {styles.bannerJoinFormButton}>SUBMIT</button>
+              </form>
+            
+            </div>
+            
+          </div>
+
+          <img src = "././councillorPhoto-noBackground.png" className= {styles.bannerPicture}></img>
+        </div>
+      
+
+
+
+
         <div className={`${styles.linkButtons} ${styles.volunteerButton}`}>
           <div className={styles.linkButtonText}>
             <svg
@@ -27,6 +54,7 @@ export default function Home() {
             <p>VOLUNTEER</p>
           </div>
         </div>
+        {/*
         <div className={`${styles.linkButtons} ${styles.donateButton}`}>
           <div className={styles.linkButtonText}>
             <svg
@@ -47,6 +75,8 @@ export default function Home() {
             <p>DONATE</p>
           </div>
         </div>
+
+        */}
         <div className={`${styles.linkButtons} ${styles.contactButton}`}>
           <div className={styles.linkButtonText}>
             <svg
@@ -82,7 +112,7 @@ export default function Home() {
             
             
              </p>
-            <img className={styles.aboutMeImage} src="././councillorPhoto.png"></img>
+            <img className={styles.aboutMeImage} src="councillorPhoto.png"></img>
         </div>
       <section>
 

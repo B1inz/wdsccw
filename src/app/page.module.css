@@ -10,17 +10,112 @@
     src: url('https://fonts.googleapis.com/css2?family=Reddit+Sans+Condensed:wght@400;700&display=swap');
 }
 
+@font-face {
+    font-family: 'Asap';
+    src: url('../../public/fonts/AsapFont.ttf');    
+    font-weight: 800;
+    font-style: normal;
+
+}
+
 .homeImg {
     width: 100%;
 }
 
 .topSectionGrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: grid;                      
+    grid-template-columns: 1fr 1fr /*1fr if donation*/; 
     grid-template-rows: 1fr auto;
 
 }
 
+.topBannerContainer{
+    display: grid;
+    grid-column: span 2;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr;
+    background: 
+    radial-gradient(circle at 114.79% 115.42%, rgba(191, 195, 204, 0.8) 29%, rgba(136, 140, 149, 0.8) 86.5%), 
+    linear-gradient(180deg, #8A8E97 0%, #B7BBC4 100%);
+    
+    
+}   
+
+.bannerPicture, .bannerText {
+    grid-row-start: 1;
+    grid-row-end: 2
+}
+
+.bannerPicture {
+    width: 100%;
+    grid-column-start: 7;
+    grid-column-end: 13;
+
+}
+
+.bannerText {
+    font-size:35px;
+    z-index: 1;
+    color:white;
+    font-family: Asap;
+    grid-column-start: 2;
+    grid-column-end: 8;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    
+}
+
+.bannerTextHeading {
+    margin-bottom: 0px;
+}
+
+.bannerTextParagraph {
+    margin:0px;
+    padding: 0px;
+}
+
+.bannerJoin{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+
+}
+
+.bannerJoinText {
+    margin-bottom: 0px;
+    font-size: 20px;
+}
+
+.bannerJoinForm {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 2fr 1fr;
+    width: 80%;
+}
+
+.bannerJoinFormInput {
+
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border: 1px solid #C9C9C9;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.bannerJoinFormButton {
+    font-family: 'Reddit Sans Condensed';
+    font-size: x-large;
+    font-weight: bold;
+    padding:15px;
+    color:white;
+    box-sizing: border-box;
+    background: #FF8D3D;
+    border: 1px solid #FF8D3D;
+    letter-spacing: 1px;
+
+}
+
+
+
+/*
 .cityImage {
     grid-column: span 3;
     width: 100%;
@@ -30,6 +125,9 @@
     background-position: center;
     
 }
+
+
+*/
 .linkButtons {
     height:125px;
     display: flex;
@@ -62,7 +160,7 @@
 
 .aboutMeContainer {
     display: flex;
-    margin: 30px 0px;
+    margin: 60px 0px;
     gap: 10px;
     justify-content: space-evenly;
     align-items: center;
