@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "next": "^15.1.4",
-    "react": "^19.0.0"
+    "react": "^19.0.0",
+    "rss-parser": "^3.13.0"
   }
 }
