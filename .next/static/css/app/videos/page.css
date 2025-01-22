@@ -1,6 +1,54 @@
-/*!**************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/app/videos/page.module.css ***!
-  \**************************************************************************************************************************************************************************************************************************************************************************/
-.page_videosImg__wHvBJ{
-    width: 100%;
+/*!**************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/app/videos/Styles/VideoCard.module.css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************/
+.VideoCard_container__GvZAP{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.VideoCard_card__bvg4U{
+    /* background-color:blueviolet; */
+    justify-content: space-between;
+    width: 500px;
+    height: 400px;
+    margin: 15px;
+    /* border-radius: 15px; */
+    aspect-ratio: 3/4;
+    max-width: 33%;
+    max-height: 33%;
+    overflow:hidden;
+}
+.VideoCard_img__YjzVP{
+    margin: 5px;
+    border-radius: 15px;
+    width:98%;
+}
+
+.VideoCard_text___mSTC{
+    /* background-color: yellow; */
+    overflow: auto;
+}
+.VideoCard_title__ha8Rb{
+    color: #4599EA;
+    padding: 0px;
+    margin: 0px;
+    font-size: x-large;
+}
+
+.VideoCard_date__WPP5o{
+    color: #FF8D3D;
+    padding: 0px;
+    margin: 0px;
+    font-size: x-large;
+}
+.VideoCard_description__VRp_0{
+    color:#145799;
+    padding: 0px;
+    margin: 0px;
+
+    font-size: large;
+    word-wrap: normal;
+    word-break: break-word;
+    overflow: auto;
 }

@@ -1,34 +1,22 @@
 {
   "pages": {
-    "/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/page.css",
-      "static/chunks/app/page.js"
-    ],
     "/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/ward-13/page": [
+    "/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/ward-13/page.css",
-      "static/chunks/app/ward-13/page.js"
+      "static/css/app/page.css",
+      "static/chunks/app/page.js"
     ],
     "/videos/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/videos/page.css",
       "static/chunks/app/videos/page.js"
-    ],
-    "/news/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/news/page.css",
-      "static/chunks/app/news/page.js"
     ]
   }
 }
