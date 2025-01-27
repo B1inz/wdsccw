@@ -1,8 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 // File: C:\Users\Danie\Desktop\WDS Website\wdsccw\src\app\layout.js
 =======
 // File: C:\code\React\LondonWard13\wdsccw\src\app\layout.js
 >>>>>>> video-page
+=======
+// File: C:\Users\2arna\OneDrive\Documents\GitHub\wdsccw\src\app\layout.js
+>>>>>>> newsletter-page
 import * as entry from '../../../src/app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

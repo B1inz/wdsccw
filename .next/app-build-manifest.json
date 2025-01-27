@@ -12,14 +12,33 @@
       "static/css/app/page.css",
       "static/chunks/app/page.js"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> newsletter-page
+    ],
+    "/my-message/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+<<<<<<< HEAD
+      "static/css/app/videos/page.css",
+      "static/chunks/app/videos/page.js"
+>>>>>>> video-page
+=======
+      "static/chunks/app/my-message/page.js"
+    ],
+    "/news/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/news/page.css",
+      "static/chunks/app/news/page.js"
     ],
     "/videos/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/videos/page.css",
       "static/chunks/app/videos/page.js"
->>>>>>> video-page
+>>>>>>> newsletter-page
     ]
   }
 }

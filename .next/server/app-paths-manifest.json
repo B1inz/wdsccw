@@ -1,8 +1,13 @@
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
   "/page": "app/page.js"
 =======
   "/page": "app/page.js",
   "/videos/page": "app/videos/page.js"
 >>>>>>> video-page
+=======
+  "/news/page": "app/news/page.js",
+  "/page": "app/page.js"
+>>>>>>> newsletter-page
 }

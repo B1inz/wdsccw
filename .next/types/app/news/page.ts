@@ -1,16 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-// File: C:\Users\Danie\Desktop\WDS Website\wdsccw\src\app\page.js
-=======
-// File: C:\code\React\LondonWard13\wdsccw\src\app\page.js
->>>>>>> video-page
-=======
-// File: C:\Users\2arna\OneDrive\Documents\GitHub\wdsccw\src\app\page.js
->>>>>>> newsletter-page
-import * as entry from '../../../src/app/page.js'
+// File: C:\Users\2arna\OneDrive\Documents\GitHub\wdsccw\src\app\news\page.js
+import * as entry from '../../../../src/app/news/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
-type TEntry = typeof import('../../../src/app/page.js')
+type TEntry = typeof import('../../../../src/app/news/page.js')
 
 type SegmentParams<T extends Object = any> = T extends Record<string, any>
   ? { [K in keyof T]: T[K] extends string ? string | string[] | undefined : never }

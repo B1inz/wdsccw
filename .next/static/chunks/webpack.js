@@ -191,10 +191,14 @@
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
 <<<<<<< HEAD
+<<<<<<< HEAD
 /******/ 		__webpack_require__.h = () => ("38410d4a21209822")
 =======
 /******/ 		__webpack_require__.h = () => ("8ab3a19ca41cc38f")
 >>>>>>> video-page
+=======
+/******/ 		__webpack_require__.h = () => ("65f8c2b79db2f532")
+>>>>>>> newsletter-page
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */

@@ -126,10 +126,14 @@
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
 <<<<<<< HEAD
+<<<<<<< HEAD
 /******/ 		__webpack_require__.h = () => ("cee9c20d7ba81be3")
 =======
 /******/ 		__webpack_require__.h = () => ("6cff369b2b1cf508")
 >>>>>>> video-page
+=======
+/******/ 		__webpack_require__.h = () => ("e8cdc2762e67e350")
+>>>>>>> newsletter-page
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
