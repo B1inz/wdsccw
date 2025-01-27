@@ -1,0 +1,27 @@
+.container{
+    margin-top: 15vh;
+    margin-left: 5vh;
+    display: flex;
+    flex-direction: column;
+    min-width: 30vh;
+    max-height: 500px;
+    color: #5ca6ed;
+    border-right: 2px solid #013567;
+}
+.title{
+    margin-left: 1vh;
+    color:#013567;
+}
+.filter{
+    all:unset;
+    border-radius: 3px;
+    margin:1%;
+    flex-grow: 1;
+    max-height: 5vh;
+}
+.filter:hover{
+    background-color: #d8ecff;
+}
+.text{
+    margin-right: 1vh;
+}

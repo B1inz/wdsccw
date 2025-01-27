@@ -11,6 +11,15 @@
       "static/chunks/main-app.js",
       "static/css/app/page.css",
       "static/chunks/app/page.js"
+<<<<<<< HEAD
+=======
+    ],
+    "/videos/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/videos/page.css",
+      "static/chunks/app/videos/page.js"
+>>>>>>> video-page
     ]
   }
 }

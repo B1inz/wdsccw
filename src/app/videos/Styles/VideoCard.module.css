@@ -1,0 +1,50 @@
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* padding: 10px; */
+}
+.card{
+    /* display: flex;
+    flex-wrap: wrap;
+    padding: 10px; */
+    justify-content: space-between;
+    /* width: 500px; */
+    /* height: 400px; */
+    /* margin: 15px; */
+    /* aspect-ratio: 3/4; */
+    /* max-width: 33%; */
+    /* max-height: 33%; */
+    overflow:hidden;
+}
+.img{
+    margin: 5px;
+    width:100%;
+}
+
+.text{
+    overflow: auto;
+}
+.title{
+    color: #4599EA;
+    padding: 0px;
+    margin: 0px;
+    font-size: x-large;
+}
+
+.date{
+    color: #FF8D3D;
+    padding: 0px;
+    margin: 0px;
+    font-size: x-large;
+}
+.description{
+    color:#145799;
+    padding: 0px;
+    margin: 0px;
+
+    font-size: large;
+    word-wrap: normal;
+    word-break: break-word;
+    overflow: auto;
+}

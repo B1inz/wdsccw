@@ -190,7 +190,11 @@
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
+<<<<<<< HEAD
 /******/ 		__webpack_require__.h = () => ("38410d4a21209822")
+=======
+/******/ 		__webpack_require__.h = () => ("8ab3a19ca41cc38f")
+>>>>>>> video-page
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
