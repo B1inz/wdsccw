@@ -1,4 +1,4 @@
-// File: C:\code\React\LondonWard13\wdsccw\src\app\videos\page.js
+// File: /Users/blin/wdsccw/src/app/videos/page.js
 import * as entry from '../../../../src/app/videos/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

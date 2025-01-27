@@ -1,13 +1,8 @@
 {
-<<<<<<< HEAD
-<<<<<<< HEAD
-  "/page": "app/page.js"
-=======
+  "/_not-found/page": "app/_not-found/page.js",
+  "/newsletter/page": "app/newsletter/page.js",
   "/page": "app/page.js",
-  "/videos/page": "app/videos/page.js"
->>>>>>> video-page
-=======
+  "/ward-13/page": "app/ward-13/page.js",
   "/news/page": "app/news/page.js",
-  "/page": "app/page.js"
->>>>>>> newsletter-page
+  "/videos/page": "app/videos/page.js"
 }

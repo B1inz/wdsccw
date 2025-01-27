@@ -5,28 +5,27 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 10px;
+    /* padding: 10px; */
 }
 .VideoCard_card__bvg4U{
-    /* background-color:blueviolet; */
+    /* display: flex;
+    flex-wrap: wrap;
+    padding: 10px; */
     justify-content: space-between;
-    width: 500px;
-    height: 400px;
-    margin: 15px;
-    /* border-radius: 15px; */
-    aspect-ratio: 3/4;
-    max-width: 33%;
-    max-height: 33%;
+    /* width: 500px; */
+    /* height: 400px; */
+    /* margin: 15px; */
+    /* aspect-ratio: 3/4; */
+    /* max-width: 33%; */
+    /* max-height: 33%; */
     overflow:hidden;
 }
 .VideoCard_img__YjzVP{
     margin: 5px;
-    border-radius: 15px;
-    width:98%;
+    width:100%;
 }
 
 .VideoCard_text___mSTC{
-    /* background-color: yellow; */
     overflow: auto;
 }
 .VideoCard_title__ha8Rb{
@@ -51,4 +50,70 @@
     word-wrap: normal;
     word-break: break-word;
     overflow: auto;
+}
+/*!***********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/app/videos/Styles/Filter.module.css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************/
+.Filter_container___JfFO{
+    margin-top: 15vh;
+    margin-left: 5vh;
+    display: flex;
+    flex-direction: column;
+    min-width: 30vh;
+    max-height: 500px;
+    color: #5ca6ed;
+    border-right: 2px solid #013567;
+}
+.Filter_title__BmbWl{
+    margin-left: 1vh;
+    color:#013567;
+}
+.Filter_filter__gY_de{
+    all:unset;
+    border-radius: 3px;
+    margin:1%;
+    flex-grow: 1;
+    max-height: 5vh;
+}
+.Filter_filter__gY_de:hover{
+    background-color: #d8ecff;
+}
+.Filter_text___I_t3{
+    margin-right: 1vh;
+}
+/*!**************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/app/videos/Styles/VideoGrid.module.css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************/
+.VideoGrid_grid__wvdEA {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3vh;
+    gap: 3vh;
+    padding: 3vh;
+    overflow: visible;
+  }
+/*!**************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/app/videos/Styles/VideoPage.module.css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************/
+.VideoPage_container__DtPzk{
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+.VideoPage_titlePage__SwnyQ{
+    color: #013567;
+    font-size:10vh;
+    border-bottom: 2px solid 
+    #013567; 
+}
+
+.VideoPage_grid__9_PyV{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.VideoPage_text__heBs_{
+    color: #013567;
 }

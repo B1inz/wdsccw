@@ -6,26 +6,23 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
+    "/newsletter/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/newsletter/page.css",
+      "static/chunks/app/newsletter/page.js"
+    ],
     "/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/page.css",
       "static/chunks/app/page.js"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> newsletter-page
     ],
-    "/my-message/page": [
+    "/ward-13/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-<<<<<<< HEAD
-      "static/css/app/videos/page.css",
-      "static/chunks/app/videos/page.js"
->>>>>>> video-page
-=======
-      "static/chunks/app/my-message/page.js"
+      "static/css/app/ward-13/page.css",
+      "static/chunks/app/ward-13/page.js"
     ],
     "/news/page": [
       "static/chunks/webpack.js",
@@ -38,7 +35,11 @@
       "static/chunks/main-app.js",
       "static/css/app/videos/page.css",
       "static/chunks/app/videos/page.js"
->>>>>>> newsletter-page
+    ],
+    "/_not-found/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/_not-found/page.js"
     ]
   }
 }
