@@ -3,7 +3,7 @@ import styles from "./page.module.css";
 export default function Ward13() {
     return (
         <>
-            {/* Full-width Banner */}
+     
             <div className={styles.banner}>
                 <img 
                     src="/ward13-banner.png" 
@@ -12,7 +12,7 @@ export default function Ward13() {
                 />
             </div>
 
-            {/* Main Content */}
+         
             <div className={styles.bodyContainer}>
                 <section className={styles.mapsSection}>
                     <h1 className={styles.sectionHeader}>Maps</h1>

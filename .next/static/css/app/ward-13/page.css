@@ -97,18 +97,53 @@ details[open] .page_summary__JnzEj::after {
     gap: 10px; 
 }
 
-.page_link__exYwm {
-    color: #0066cc;
-    text-decoration: none;
-}
 
-.page_link__exYwm:hover {
-    text-decoration: underline;
-}
-
-.page_mapsSection__iv5a_ img {
+.page_mapContainer__AVbZ4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    gap: 20px; 
     width: 100%;
+}
+
+
+.page_link__exYwm {
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #0056b3;
+}
+
+
+.page_mapImage__tj5DF {
+    width: 50%; 
     height: auto;
     border-radius: 5px;
+}
+
+
+
+.page_banner__DpdZS {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+
+.page_bannerImage__FVnq5 {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.page_bodyContainer__qm7BN {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 20px;
 }
 
