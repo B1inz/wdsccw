@@ -1,6 +1,114 @@
 /*!***************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/app/ward-13/page.module.css ***!
   \***************************************************************************************************************************************************************************************************************************************************************************/
-.page_ward13Img__XWYjU {
-    width: 100%;
+
+.page_bodyContainer__qm7BN {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 800px;
+    text-align: center;
 }
+
+
+.page_banner__DpdZS {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.page_bannerImage__FVnq5 {
+    width: 100%;
+    height: auto;
+}
+
+
+.page_sectionHeader__zl8Dz {
+    font-size: 24px;
+    color: #003366;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #003366;
+    display: inline-block;
+    padding: 10px;
+}
+
+.page_mapsSection__iv5a_ ul,
+.page_resourcesSection__2RnVq ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.page_mapsSection__iv5a_ li,
+.page_resourcesSection__2RnVq li {
+    margin-bottom: 20px;
+}
+
+.page_mapsSection__iv5a_ details,
+.page_resourcesSection__2RnVq details {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.page_summary__JnzEj {
+    font-size: 18px;
+    font-weight: bold;
+    color: #003366;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px; 
+    border: none;
+    background: none;
+    padding: 10px 0;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none; 
+    list-style: none;
+}
+
+.page_summary__JnzEj::marker {
+    display: none; 
+}
+
+.page_summary__JnzEj::after {
+    content: "▼";
+    font-size: 14px;
+    color: #ff6600; 
+    transform: translateY(1px);
+    transition: transform 0.3s ease;
+}
+
+details[open] .page_summary__JnzEj::after {
+    transform: rotate(180deg) translateY(1px); 
+}
+
+.page_summary__JnzEj:hover {
+    color: #ff6600;
+}
+
+
+.page_dropdownContent__JUt10 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    margin-top: 10px;
+    gap: 10px; 
+}
+
+.page_link__exYwm {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.page_link__exYwm:hover {
+    text-decoration: underline;
+}
+
+.page_mapsSection__iv5a_ img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+

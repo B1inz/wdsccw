@@ -1,6 +1,5 @@
 {
-  "/ward-13/page": "app/ward-13/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
   "/page": "app/page.js",
-  "/videos/page": "app/videos/page.js",
-  "/news/page": "app/news/page.js"
+  "/ward-13/page": "app/ward-13/page.js"
 }
