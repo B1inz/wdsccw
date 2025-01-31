@@ -389,7 +389,7 @@ AboutMe.js
 
 .aboutMeContainer {
     display: flex;
-    margin: 60px 0px;
+    margin: 20px 0px;
     gap: 10px;
     justify-content: space-evenly;
     align-items: center;
@@ -413,4 +413,110 @@ AboutMe.js
     font-size: xxx-large;
     font-weight: 700;
     
+}
+
+@media only screen and (min-width: 860px) and (max-width: 1100px) {
+    .aboutMeText {
+        font-size: large;
+        line-height: 2rem;
+
+    }
+
+    .aboutMeBigText {
+        font-size: x-large;
+
+    }
+}
+
+@media only screen and (min-width: 860px) and (max-width: 1100px) {
+    .aboutMeText {
+        font-size: large;
+        line-height: 2rem;
+
+    }
+
+    .aboutMeBigText {
+        font-size: xx-large;
+
+    }
+}
+
+
+@media only screen and (min-width: 760px) and (max-width: 860px) {
+    .aboutMeText {
+        font-size: medium;
+        line-height: 2rem;
+
+    }
+
+    .aboutMeBigText {
+        font-size: x-large;
+
+    }
+
+    .aboutMeImage {
+        height: 250px;
+    
+    }
+}
+
+
+@media only screen and (min-width: 460px) and (max-width: 600px) {
+
+    
+    .aboutMeText {
+        font-size: x-small;
+        line-height: 1.2rem;
+
+    }
+
+    .aboutMeBigText {
+        font-size: medium;
+
+    }
+
+    .aboutMeImage {
+        height: 150px;
+    
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    
+    
+
+    .aboutMeText {
+        font-size: xx-small;
+        line-height: 1.2rem;
+
+    }
+
+    .aboutMeBigText {
+        font-size: small;
+
+    }
+
+    .aboutMeImage {
+        height: 120px;
+    
+    }
+}
+
+
+@media only screen and (min-width: 600px) and (max-width: 760px) {
+    .aboutMeText {
+        font-size: small;
+        line-height: 1.5rem;
+
+    }
+
+    .aboutMeBigText {
+        font-size: large;
+
+    }
+
+    .aboutMeImage {
+        height: 200px;
+    
+    }
 }

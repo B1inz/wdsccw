@@ -392,7 +392,7 @@ AboutMe.js
 
 .page_aboutMeContainer__mA3G0 {
     display: flex;
-    margin: 60px 0px;
+    margin: 20px 0px;
     gap: 10px;
     justify-content: space-evenly;
     align-items: center;
@@ -417,3 +417,110 @@ AboutMe.js
     font-weight: 700;
     
 }
+
+@media only screen and (min-width: 860px) and (max-width: 1100px) {
+    .page_aboutMeText__T1LyT {
+        font-size: large;
+        line-height: 2rem;
+
+    }
+
+    .page_aboutMeBigText__jZ0FN {
+        font-size: x-large;
+
+    }
+}
+
+@media only screen and (min-width: 860px) and (max-width: 1100px) {
+    .page_aboutMeText__T1LyT {
+        font-size: large;
+        line-height: 2rem;
+
+    }
+
+    .page_aboutMeBigText__jZ0FN {
+        font-size: xx-large;
+
+    }
+}
+
+
+@media only screen and (min-width: 760px) and (max-width: 860px) {
+    .page_aboutMeText__T1LyT {
+        font-size: medium;
+        line-height: 2rem;
+
+    }
+
+    .page_aboutMeBigText__jZ0FN {
+        font-size: x-large;
+
+    }
+
+    .page_aboutMeImage__wRFR4 {
+        height: 250px;
+    
+    }
+}
+
+
+@media only screen and (min-width: 460px) and (max-width: 600px) {
+
+    
+    .page_aboutMeText__T1LyT {
+        font-size: x-small;
+        line-height: 1.2rem;
+
+    }
+
+    .page_aboutMeBigText__jZ0FN {
+        font-size: medium;
+
+    }
+
+    .page_aboutMeImage__wRFR4 {
+        height: 150px;
+    
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    
+    
+
+    .page_aboutMeText__T1LyT {
+        font-size: xx-small;
+        line-height: 1.2rem;
+
+    }
+
+    .page_aboutMeBigText__jZ0FN {
+        font-size: small;
+
+    }
+
+    .page_aboutMeImage__wRFR4 {
+        height: 120px;
+    
+    }
+}
+
+
+@media only screen and (min-width: 600px) and (max-width: 760px) {
+    .page_aboutMeText__T1LyT {
+        font-size: small;
+        line-height: 1.5rem;
+
+    }
+
+    .page_aboutMeBigText__jZ0FN {
+        font-size: large;
+
+    }
+
+    .page_aboutMeImage__wRFR4 {
+        height: 200px;
+    
+    }
+}
+
