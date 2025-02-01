@@ -561,8 +561,8 @@ Drop Down Menu CSS
     margin-left: 5%;
     margin-right: 10%;
     font-family: 'Poppins', sans-serif;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .page_dropSubHeading__2MJhO {
@@ -634,4 +634,56 @@ Drop Down Menu CSS
         margin: 3px;
     }
 }
+
+/*
+
+Latest News Component
+
+*/
+
+.page_latestNews__mC_qj {
+    margin: 50px 5%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.page_latestNewsHeading__GOkE9 {
+    color: #145899;
+    font-size: 40px;
+    margin: 20px 0px;
+}
+
+.page_latestNewsGrid__N_2hn {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5%;
+    gap: 5%;
+}
+
+.page_latestNewsGridItem__ERKfi {
+    background-color: #f9f9f9;
+    border-radius: 9px;
+    padding: 30px;
+    
+}
+
+.page_latestNewsTitle__GVoUF {
+    color: #013567;
+    margin: 0px;
+    margin-top: 15px;
+    font-size: large;
+}
+
+.page_latestNewsDate__1TRC0 {
+    color: #A3A3A3;
+    margin: 0px;
+
+}
+
+.page_latestNewsText__R3a9g{
+    color: #3780C5;
+    margin:0px;
+}
+
+
+
 

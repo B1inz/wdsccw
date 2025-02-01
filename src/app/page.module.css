@@ -558,8 +558,8 @@ Drop Down Menu CSS
     margin-left: 5%;
     margin-right: 10%;
     font-family: 'Poppins', sans-serif;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .dropSubHeading {
@@ -631,3 +631,54 @@ Drop Down Menu CSS
         margin: 3px;
     }
 }
+
+/*
+
+Latest News Component
+
+*/
+
+.latestNews {
+    margin: 50px 5%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.latestNewsHeading {
+    color: #145899;
+    font-size: 40px;
+    margin: 20px 0px;
+}
+
+.latestNewsGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5%;
+}
+
+.latestNewsGridItem {
+    background-color: #f9f9f9;
+    border-radius: 9px;
+    padding: 30px;
+    
+}
+
+.latestNewsTitle {
+    color: #013567;
+    margin: 0px;
+    margin-top: 15px;
+    font-size: large;
+}
+
+.latestNewsDate {
+    color: #A3A3A3;
+    margin: 0px;
+
+}
+
+.latestNewsText{
+    color: #3780C5;
+    margin:0px;
+}
+
+
+

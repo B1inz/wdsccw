@@ -2,9 +2,10 @@
 import React from "react";
 import styles from "./page.module.css";
 import TopHero from "./TopHero";
-import AboutMe from "./AboutMe";
+import AboutMe from "./AboutMe.jsx";
 import DropDownInfo from "./DropDownInfo";
 import dropDownText from "./dropDownText";
+import LatestNews from "./LatestNews.jsx";
 
 export default function Home() {
 
@@ -20,7 +21,7 @@ export default function Home() {
        
       />})}
       
-    
+        <LatestNews/>
     </div>
   );
 }
