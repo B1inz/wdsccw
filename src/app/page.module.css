@@ -119,34 +119,6 @@
 }
 
 
-
-
-
-/*
-.topBannerContainer{
-    width: 100vw;
-    display: grid;
-    grid-column: span 2;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 1fr;
-    
-    
-    
-}   
-
-
-.bannerPicture {
-    
-    width:100vw;
-    overflow: hidden;
- 
-
-}
-
-
-
-*/
-
 .linkButtons {
     
     height:125px;
@@ -387,6 +359,35 @@ AboutMe.js
 
 
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+
+
+.visible {
+    display: block;
+    transition: 150ms ease; 
+}
+
+.hidden {
+    display: none;
+}
+
 .aboutMeContainer {
     display: flex;
     margin: 20px 0px;
@@ -481,7 +482,7 @@ AboutMe.js
     }
 }
 
-@media only screen and (max-width: 460px) {
+@media only screen and (max-width: 460px) and (min-width: 400px) {
     
     
 
@@ -518,5 +519,115 @@ AboutMe.js
     .aboutMeImage {
         height: 200px;
     
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    
+    
+
+    .aboutMeText {
+        font-size: 8px;
+        line-height: 1rem;
+
+    }
+
+    .aboutMeBigText {
+        font-size: small;
+
+    }
+
+    .aboutMeImage {
+        height: 100px;
+    
+    }
+}
+/*
+
+Drop Down Menu CSS
+
+*/
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+}
+
+
+.dropDownContainer {
+    margin-left: 5%;
+    margin-right: 10%;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.dropSubHeading {
+    color: #013567;
+    display: flex;
+    font-size: 25px;
+    align-items: center;
+
+}
+
+.dropLine {
+    margin: 2px;
+    height:2px;
+    background-color: #4796E3;
+}
+
+
+.dropSubHeadingText {
+    margin: 0px 3px;
+
+}
+
+.dropDownList{
+    list-style: none;
+
+}
+
+.dropDownListItemSubHeading {
+    color:#FF8D3D;
+    font-size: larger;
+    margin:0px;
+    font-weight: 100;
+
+}
+
+.dropDownListItemText {
+    font-size: medium;
+    color: #4796E3;
+    margin: 5px;
+    font-weight: 50;
+
+}   
+
+@media only screen and (max-width: 900px)  and (min-width: 550px){
+    .dropSubHeading {
+        font-size: 20px;
+    }
+
+    .dropDownListItemSubHeading {
+        font-size: medium;
+    }
+
+    .dropDownListItemText {
+        font-size: small;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    .dropSubHeading {
+        font-size: 15px;
+    }
+
+    .dropDownListItemSubHeading {
+        font-size: small;
+    }
+
+    .dropDownListItemText {
+        font-size: x-small;
+        margin: 3px;
     }
 }

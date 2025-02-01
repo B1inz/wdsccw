@@ -122,34 +122,6 @@
 }
 
 
-
-
-
-/*
-.topBannerContainer{
-    width: 100vw;
-    display: grid;
-    grid-column: span 2;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 1fr;
-    
-    
-    
-}   
-
-
-.bannerPicture {
-    
-    width:100vw;
-    overflow: hidden;
- 
-
-}
-
-
-
-*/
-
 .page_linkButtons__6Cqpc {
     
     height:125px;
@@ -390,6 +362,35 @@ AboutMe.js
 
 
 
+@keyframes page_fadeIn__wvzG6 {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes page_fadeOut__Cdvqk {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+
+
+.page_visible__NlJV_ {
+    display: block;
+    transition: 150ms ease; 
+}
+
+.page_hidden__cfeGo {
+    display: none;
+}
+
 .page_aboutMeContainer__mA3G0 {
     display: flex;
     margin: 20px 0px;
@@ -484,7 +485,7 @@ AboutMe.js
     }
 }
 
-@media only screen and (max-width: 460px) {
+@media only screen and (max-width: 460px) and (min-width: 400px) {
     
     
 
@@ -521,6 +522,116 @@ AboutMe.js
     .page_aboutMeImage__wRFR4 {
         height: 200px;
     
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    
+    
+
+    .page_aboutMeText__T1LyT {
+        font-size: 8px;
+        line-height: 1rem;
+
+    }
+
+    .page_aboutMeBigText__jZ0FN {
+        font-size: small;
+
+    }
+
+    .page_aboutMeImage__wRFR4 {
+        height: 100px;
+    
+    }
+}
+/*
+
+Drop Down Menu CSS
+
+*/
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+}
+
+
+.page_dropDownContainer__v1C0M {
+    margin-left: 5%;
+    margin-right: 10%;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.page_dropSubHeading__2MJhO {
+    color: #013567;
+    display: flex;
+    font-size: 25px;
+    align-items: center;
+
+}
+
+.page_dropLine__pLKUK {
+    margin: 2px;
+    height:2px;
+    background-color: #4796E3;
+}
+
+
+.page_dropSubHeadingText__TNkyH {
+    margin: 0px 3px;
+
+}
+
+.page_dropDownList__67f7m{
+    list-style: none;
+
+}
+
+.page_dropDownListItemSubHeading__SEB07 {
+    color:#FF8D3D;
+    font-size: larger;
+    margin:0px;
+    font-weight: 100;
+
+}
+
+.page_dropDownListItemText__i5hoO {
+    font-size: medium;
+    color: #4796E3;
+    margin: 5px;
+    font-weight: 50;
+
+}   
+
+@media only screen and (max-width: 900px)  and (min-width: 550px){
+    .page_dropSubHeading__2MJhO {
+        font-size: 20px;
+    }
+
+    .page_dropDownListItemSubHeading__SEB07 {
+        font-size: medium;
+    }
+
+    .page_dropDownListItemText__i5hoO {
+        font-size: small;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    .page_dropSubHeading__2MJhO {
+        font-size: 15px;
+    }
+
+    .page_dropDownListItemSubHeading__SEB07 {
+        font-size: small;
+    }
+
+    .page_dropDownListItemText__i5hoO {
+        font-size: x-small;
+        margin: 3px;
     }
 }
 
