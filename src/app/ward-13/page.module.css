@@ -92,17 +92,52 @@ details[open] .summary::after {
     gap: 10px; 
 }
 
-.link {
-    color: #0066cc;
-    text-decoration: none;
-}
 
-.link:hover {
-    text-decoration: underline;
-}
-
-.mapsSection img {
+.mapContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    gap: 20px; 
     width: 100%;
+}
+
+
+.link {
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #0056b3;
+}
+
+
+.mapImage {
+    width: 50%; 
     height: auto;
     border-radius: 5px;
+}
+
+
+
+.banner {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+
+.bannerImage {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.bodyContainer {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 20px;
 }
