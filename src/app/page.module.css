@@ -553,6 +553,42 @@ Drop Down Menu CSS
     src: url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 }
 
+.dropSubHeading {
+    font-size: 35px;
+    font-weight: 700;
+    color: #036;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border: none;
+    background: none;
+    padding: 10px 0;
+    
+}
+
+.summary{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    list-style: none
+}
+
+.dropSubHeading::after {
+    content: "▼";
+    font-size: 20px;
+    color: #f60;
+    transform: translateY(1px);
+    transition: transform .3s ease
+}
+
+details[open] .dropSubHeading::after {
+    transform: rotate(180deg) translateY(1px)
+}
+
+.dropSubHeading:hover {
+    color: #f60
+}
 
 .dropDownContainer {
     margin-left: 5%;
@@ -605,7 +641,11 @@ Drop Down Menu CSS
 
 @media only screen and (max-width: 900px)  and (min-width: 550px){
     .dropSubHeading {
-        font-size: 20px;
+        font-size: 16px;
+    }
+
+    .dropSubHeading::after {
+        font-size: 15px;
     }
 
     .dropDownListItemSubHeading {
@@ -619,7 +659,11 @@ Drop Down Menu CSS
 
 @media only screen and (max-width: 550px){
     .dropSubHeading {
-        font-size: 15px;
+        font-size: 13px;
+    }
+
+    .dropSubHeading::after {
+        font-size: 10px;
     }
 
     .dropDownListItemSubHeading {
@@ -682,3 +726,56 @@ Latest News Component
 
 
 
+@media only screen and (max-width: 900px)  and (min-width: 700px) {
+
+    
+    .latestNewsText {
+        font-size: small;
+    }
+
+    .latestNewsGridItem {
+        padding: 15px;
+    }
+
+
+}
+
+@media only screen and (max-width: 700px)  and (min-width: 500px) {
+
+    .latestNewsHeading {
+        font-size: 33px
+    }
+
+    .latestNewsTitle, .latestNewsDate {
+        font-size: medium;
+    }
+    .latestNewsText {
+        font-size: x-small;
+    }
+
+    .latestNewsGridItem {
+        padding: 10px;
+    }
+
+
+}
+
+@media only screen and (max-width: 500px){
+
+    .latestNewsHeading {
+        font-size: 30px
+    }
+
+    .latestNewsTitle, .latestNewsDate {
+        font-size: small;
+    }
+    .latestNewsText {
+        font-size: xx-small;
+    }
+
+    .latestNewsGridItem {
+        padding: 5px;
+    }
+
+
+}

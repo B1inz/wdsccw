@@ -556,6 +556,42 @@ Drop Down Menu CSS
     src: url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 }
 
+.page_dropSubHeading__2MJhO {
+    font-size: 35px;
+    font-weight: 700;
+    color: #036;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border: none;
+    background: none;
+    padding: 10px 0;
+    
+}
+
+.page_summary__7gEMW{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    list-style: none
+}
+
+.page_dropSubHeading__2MJhO::after {
+    content: "▼";
+    font-size: 20px;
+    color: #f60;
+    transform: translateY(1px);
+    transition: transform .3s ease
+}
+
+details[open] .page_dropSubHeading__2MJhO::after {
+    transform: rotate(180deg) translateY(1px)
+}
+
+.page_dropSubHeading__2MJhO:hover {
+    color: #f60
+}
 
 .page_dropDownContainer__v1C0M {
     margin-left: 5%;
@@ -608,7 +644,11 @@ Drop Down Menu CSS
 
 @media only screen and (max-width: 900px)  and (min-width: 550px){
     .page_dropSubHeading__2MJhO {
-        font-size: 20px;
+        font-size: 16px;
+    }
+
+    .page_dropSubHeading__2MJhO::after {
+        font-size: 15px;
     }
 
     .page_dropDownListItemSubHeading__SEB07 {
@@ -622,7 +662,11 @@ Drop Down Menu CSS
 
 @media only screen and (max-width: 550px){
     .page_dropSubHeading__2MJhO {
-        font-size: 15px;
+        font-size: 13px;
+    }
+
+    .page_dropSubHeading__2MJhO::after {
+        font-size: 10px;
     }
 
     .page_dropDownListItemSubHeading__SEB07 {
@@ -686,4 +730,56 @@ Latest News Component
 
 
 
+@media only screen and (max-width: 900px)  and (min-width: 700px) {
 
+    
+    .page_latestNewsText__R3a9g {
+        font-size: small;
+    }
+
+    .page_latestNewsGridItem__ERKfi {
+        padding: 15px;
+    }
+
+
+}
+
+@media only screen and (max-width: 700px)  and (min-width: 500px) {
+
+    .page_latestNewsHeading__GOkE9 {
+        font-size: 33px
+    }
+
+    .page_latestNewsTitle__GVoUF, .page_latestNewsDate__1TRC0 {
+        font-size: medium;
+    }
+    .page_latestNewsText__R3a9g {
+        font-size: x-small;
+    }
+
+    .page_latestNewsGridItem__ERKfi {
+        padding: 10px;
+    }
+
+
+}
+
+@media only screen and (max-width: 500px){
+
+    .page_latestNewsHeading__GOkE9 {
+        font-size: 30px
+    }
+
+    .page_latestNewsTitle__GVoUF, .page_latestNewsDate__1TRC0 {
+        font-size: small;
+    }
+    .page_latestNewsText__R3a9g {
+        font-size: xx-small;
+    }
+
+    .page_latestNewsGridItem__ERKfi {
+        padding: 5px;
+    }
+
+
+}

@@ -19,8 +19,8 @@ const dropDownText = [
 
         ]
     },
-    {
-        heading: "Local Agencies, Boards, commissions",
+    {   
+        heading: "Local Agencies, Boards, Commissions",
         subText: [
             {
                 subHeading: "Covent Garden Market Board",
