@@ -1,0 +1,146 @@
+/*!****************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/app/about-me/page.module.css ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************/
+
+/*  
+
+AboutMeTopHeader.js
+
+
+*/
+
+@import url('https://fonts.cdnfonts.com/css/akshar-unicode');
+@import url('https://fonts.cdnfonts.com/css/reddit-sans-condensed');
+
+                
+.page_aboutMePage___F3_P{
+    width: 100%
+}
+
+.page_aboutMeTopHero__aKZiq {
+  
+    background-image: url(/_next/static/media/davidexpanded.1535db88.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+    background-position: center right; 
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.page_aboutMeTopHeroText__dHRdH {
+    font-family: 'Reddit Sans Condensed', sans-serif;
+   
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.page_aboutMeTopHeroName__d_zet{
+    margin: 0px;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.page_aboutMeTopHeroMeet__6O8m6{
+    margin: 0px;
+    font-size: x-large;
+    font-weight: 600;
+}
+
+.page_aboutMeTopHeroHR__OzcG4{
+    width: 30%;
+}
+
+.page_aboutMeTopHeroDescriptionContainer__JYH0x {
+    font-family: 'Akshar Unicode', sans-serif;
+    color: #145899;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px;
+    
+}
+
+.page_aboutMeTopHeroDescription__QWOog {
+    
+    font-size: medium;
+    font-weight: medium;
+    text-align: center;
+    width: 85%;
+    font-size: 30px;
+    letter-spacing: 1.6px;
+    
+}
+
+
+/*  
+
+TimeLine.js
+
+
+*/
+
+@import url('https://fonts.cdnfonts.com/css/reddit-sans-condensed');
+@import url('https://fonts.cdnfonts.com/css/poppins');
+
+.page_timeLineImage__dAtMi {
+    height: 300px;
+    max-width: 100%;
+    margin: 20px 0px;
+}
+
+
+
+.page_timeLineHorizontalRule__7R2Fw {
+    width: 2px;
+    height:80px;
+    background-color: #145899;
+    border:none;
+    transform: rotate(90);
+}
+
+.page_timeLineHorizontalRuleContainer__afaVe {
+    margin: 20px 0px;
+
+}
+
+
+.page_timeLineText__Z3SeN {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #145899;
+    font-family: 'Poppins', sans-serif;
+ 
+                                                
+}
+
+.page_timeLineHeading__ICeVm {
+    font-family: 'Reddit Sans Condensed', sans-serif;
+    max-width: 60%;
+    margin: 15px 0px;
+    font-weight: 600;
+    font-size: 40px;
+                                                
+}
+
+.page_timeLineDescription__pVlL0 {
+    max-width: 45%;
+    margin: 20px 0px;
+    font-size: 23px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    text-align: center;
+    
+                                                
+}
+
+.page_timeLineImageContainer___E1i_ {
+    display: flex;
+    justify-content: center;
+}
