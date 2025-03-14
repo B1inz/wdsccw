@@ -1,10 +1,13 @@
 import axios from "axios";
 
 const BASE_URL = "https://www.googleapis.com/youtube/v3";
-const API_KEY = process.env.REACT_APP_YOUTUBE_API_KEY;
+// const API_KEY = process.env.REACT_APP_YOUTUBE_API_KEY;
+const API_KEY = "AIzaSyDc7ONfHJ9_9ZzbNpDQkjsUH8ycctZrUYA";
 
 export const fetchVideos = async (searchQuery ="", channelId="") => {
     try {
+        console.log("YouTube API Key:", process.env.REACT_APP_YOUTUBE_API_KEY);
+
         const response = await axios.get(`${BASE_URL}/search`, {
             params: {
                 part: "snippet",

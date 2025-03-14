@@ -25,3 +25,9 @@
 .text{
     margin-right: 1vh;
 }
+
+@media (max-width: 1025px){
+    .container{
+        display: none;
+    }
+}
