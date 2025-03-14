@@ -4,14 +4,25 @@ const VideoCard = ({video}) =>{
     return(
         <div className={styles.container}>
             <div className={styles.card}>
-                <a 
-                href={`https://www.youtube.com/watch?v=${video.id}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.anchor}
-                >
-                <img src={`/${video.thumbnail}`} alt={video.title} className={styles.img}/>
-                </a>
+                {/* <iframe className={styles.video}        HARD CODED VIDEO!!!!!
+                    src="https://www.youtube.com/embed/WyVOGYVfN2o?si=nCnA4NT-NXlPMOXT" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                    gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+                </iframe> */}
+
+                <iframe className={styles.video} 
+                    src={`https://www.youtube.com/embed/${video.id}`} 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                    gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+                </iframe>
+
                 <div className={styles.text}>
                     <h1 className={styles.title}>{video.title}</h1>
                     <h2 className={styles.date}>{video.date}</h2>

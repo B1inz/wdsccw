@@ -5,3 +5,9 @@
     padding: 3vh;
     overflow: visible;
   }
+
+  @media (max-width: 1025px) {
+    .grid {
+        grid-template-columns: 1fr; /* 1 column layout */
+    }
+}
