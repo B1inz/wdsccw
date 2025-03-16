@@ -1,10 +1,5 @@
-<<<<<<< HEAD:.next/types/app/contact/page.ts
-// File: C:\Users\Danie\Desktop\WDS Website\wdsccw\src\app\contact\page.js
+// File: /Users/blin/wdsccw/src/app/contact/page.js
 import * as entry from '../../../../src/app/contact/page.js'
-=======
-// File: /Users/tahaawan/Downloads/wdsccw/src/app/ward-13/page.js
-import * as entry from '../../../../src/app/ward-13/page.js'
->>>>>>> ward13-page:.next/types/app/ward-13/page.ts
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
 type TEntry = typeof import('../../../../src/app/contact/page.js')
