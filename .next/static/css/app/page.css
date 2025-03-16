@@ -1,8 +1,6 @@
 /*!*******************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/app/page.module.css ***!
   \*******************************************************************************************************************************************************************************************************************************************************************/
-
-
 @font-face {
     font-family: 'Roboto Condensed';
     src: url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
@@ -30,7 +28,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr auto;
-    
+
+
 
 }
 
@@ -39,11 +38,11 @@
     grid-column: span 2;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: top right; 
+    background-position: top right;
     background-image: url(/_next/static/media/davidexpandedagain.7baa0186.jpg);
-    
-    
-   
+
+
+
 }
 
 
@@ -54,7 +53,7 @@
     flex-direction: column;
     font-size: 30px;
     z-index: 1;
-    color:white;
+    color: white;
     font-family: Bricolage Grotesque;
     grid-column-start: 2;
     grid-column-end: 10;
@@ -62,21 +61,21 @@
     margin-top: 20px;
 
     grid-column-start: 0;
-    
-    
+
+
 }
 
 .page_bannerTextHeading__VHtts {
     margin-bottom: 0px;
-    font-weight:bold;
+    font-weight: bold;
 }
 
 .page_bannerTextParagraph__Bf_mz {
-    margin:0px;
+    margin: 0px;
     padding: 0px;
 }
 
-.page_bannerJoin__d5o1q{
+.page_bannerJoin__d5o1q {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
 
@@ -106,8 +105,8 @@
     font-family: 'Reddit Sans Condensed';
     font-size: x-large;
     font-weight: bold;
-    padding:15px;
-    color:white;
+    padding: 15px;
+    color: white;
     box-sizing: border-box;
     background: #FF8D3D;
     border: 1px solid #FF8D3D;
@@ -122,12 +121,13 @@
 
 
 .page_linkButtons__6Cqpc {
-    
-    height:125px;
+
+    height: 125px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .page_linkButtonText__w388h {
     display: flex;
     justify-content: center;
@@ -137,10 +137,10 @@
     margin-top: 0px;
     align-items: center;
     font-family: 'Roboto Condensed', sans-serif;
-}   
+}
 
 
-.page_contactButton__dZrXS{
+.page_contactButton__dZrXS {
     background-color: #145899;
 }
 
@@ -158,7 +158,7 @@
 
     .page_bannerTextHeading__VHtts {
         font-size: 18px;
-       
+
         margin-top: 0px;
     }
 
@@ -167,7 +167,7 @@
         padding: 8px;
     }
 
-    .page_bannerJoin__d5o1q{
+    .page_bannerJoin__d5o1q {
         font-size: 10px;
     }
 
@@ -175,9 +175,9 @@
         font-size: 10px;
     }
 
-    .page_bannerJoinForm__eJE8w{
+    .page_bannerJoinForm__eJE8w {
         width: 100px;
-     
+
     }
 
     .page_bannerJoinText__UKasS {
@@ -185,7 +185,7 @@
         font-size: 10px;
     }
 
-    .page_linkButtons__6Cqpc { 
+    .page_linkButtons__6Cqpc {
 
         height: 60px;
 
@@ -204,12 +204,11 @@
 @media only screen and (min-width: 500px) and (max-width: 700px) {
     .page_topBannerContainer__WrQpg {
         height: 300px
-        
     }
 
     .page_bannerTextHeading__VHtts {
         font-size: 25px;
-       
+
         margin-top: 20px;
     }
 
@@ -218,7 +217,7 @@
         padding: 8px;
     }
 
-    .page_bannerJoin__d5o1q{
+    .page_bannerJoin__d5o1q {
         font-size: 15px;
     }
 
@@ -226,9 +225,9 @@
         font-size: 15px;
     }
 
-    .page_bannerJoinForm__eJE8w{
+    .page_bannerJoinForm__eJE8w {
         width: 100px;
-     
+
     }
 
     .page_bannerJoinText__UKasS {
@@ -236,10 +235,10 @@
         font-size: 10px;
     }
 
-    .page_linkButtons__6Cqpc { 
+    .page_linkButtons__6Cqpc {
 
         height: 80px;
-        
+
 
     }
 
@@ -252,12 +251,11 @@
 @media only screen and (min-width: 700px) and (max-width: 900px) {
     .page_topBannerContainer__WrQpg {
         height: 400px
-        
     }
 
     .page_bannerTextHeading__VHtts {
         font-size: 30px;
-       
+
         margin-top: 40px;
     }
 
@@ -266,7 +264,7 @@
         padding: 10px;
     }
 
-    .page_bannerJoin__d5o1q{
+    .page_bannerJoin__d5o1q {
         font-size: 20px;
     }
 
@@ -274,9 +272,9 @@
         font-size: 20px;
     }
 
-    .page_bannerJoinForm__eJE8w{
+    .page_bannerJoinForm__eJE8w {
         width: 100px;
-     
+
     }
 
     .page_bannerJoinText__UKasS {
@@ -284,19 +282,18 @@
         font-size: 15px;
     }
 
-    
+
 }
 
 @media only screen and (min-width: 900px) and (max-width: 1100px) {
     .page_topBannerContainer__WrQpg {
         height: 500px
-        
     }
 
 
     .page_bannerTextHeading__VHtts {
         font-size: 35px;
-       
+
         margin-top: 50px;
     }
 
@@ -305,7 +302,7 @@
         padding: 10px;
     }
 
-    .page_bannerJoin__d5o1q{
+    .page_bannerJoin__d5o1q {
         font-size: 20px;
     }
 
@@ -313,9 +310,9 @@
         font-size: 20px;
     }
 
-    .page_bannerJoinForm__eJE8w{
+    .page_bannerJoinForm__eJE8w {
         width: 100px;
-     
+
     }
 
     .page_bannerJoinText__UKasS {
@@ -338,12 +335,11 @@
 @media only screen and (min-width:1300px) {
     .page_topBannerContainer__WrQpg {
         height: 700px
-        
     }
 
 
     .page_bannerTextHeading__VHtts {
-       
+
         margin-top: 100px;
     }
 
@@ -365,6 +361,7 @@ AboutMe.js
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -374,6 +371,7 @@ AboutMe.js
     from {
         opacity: 1;
     }
+
     to {
         opacity: 0;
     }
@@ -383,7 +381,7 @@ AboutMe.js
 
 .page_visible__NlJV_ {
     display: block;
-    transition: 150ms ease; 
+    transition: 150ms ease;
 }
 
 .page_hidden__cfeGo {
@@ -403,19 +401,19 @@ AboutMe.js
 
 }
 
-.page_aboutMeText__T1LyT{
-    color:#145899;
-    font-size:x-large;
+.page_aboutMeText__T1LyT {
+    color: #145899;
+    font-size: x-large;
     line-height: 2.5rem;
-    font-family:'Reddit Sans Condensed', sans-serif;
-    font-weight:550;
+    font-family: 'Reddit Sans Condensed', sans-serif;
+    font-weight: 550;
 }
 
 .page_aboutMeBigText__jZ0FN {
-    color:#FF8D3D;
+    color: #FF8D3D;
     font-size: xxx-large;
     font-weight: 700;
-    
+
 }
 
 @media only screen and (min-width: 860px) and (max-width: 1100px) {
@@ -459,14 +457,14 @@ AboutMe.js
 
     .page_aboutMeImage__wRFR4 {
         height: 250px;
-    
+
     }
 }
 
 
 @media only screen and (min-width: 460px) and (max-width: 600px) {
 
-    
+
     .page_aboutMeText__T1LyT {
         font-size: x-small;
         line-height: 1.2rem;
@@ -480,13 +478,13 @@ AboutMe.js
 
     .page_aboutMeImage__wRFR4 {
         height: 150px;
-    
+
     }
 }
 
 @media only screen and (max-width: 460px) and (min-width: 400px) {
-    
-    
+
+
 
     .page_aboutMeText__T1LyT {
         font-size: xx-small;
@@ -501,7 +499,7 @@ AboutMe.js
 
     .page_aboutMeImage__wRFR4 {
         height: 120px;
-    
+
     }
 }
 
@@ -520,13 +518,13 @@ AboutMe.js
 
     .page_aboutMeImage__wRFR4 {
         height: 200px;
-    
+
     }
 }
 
 @media only screen and (max-width: 400px) {
-    
-    
+
+
 
     .page_aboutMeText__T1LyT {
         font-size: 8px;
@@ -541,9 +539,10 @@ AboutMe.js
 
     .page_aboutMeImage__wRFR4 {
         height: 100px;
-    
+
     }
 }
+
 /*
 
 Drop Down Menu CSS
@@ -555,6 +554,42 @@ Drop Down Menu CSS
     src: url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 }
 
+.page_dropSubHeading__2MJhO {
+    font-size: 35px;
+    font-weight: 700;
+    color: #036;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border: none;
+    background: none;
+    padding: 10px 0;
+
+}
+
+.page_summary__7gEMW {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    list-style: none
+}
+
+.page_dropSubHeading__2MJhO::after {
+    content: "▼";
+    font-size: 20px;
+    color: #f60;
+    transform: translateY(1px);
+    transition: transform .3s ease
+}
+
+details[open] .page_dropSubHeading__2MJhO::after {
+    transform: rotate(180deg) translateY(1px)
+}
+
+.page_dropSubHeading__2MJhO:hover {
+    color: #f60
+}
 
 .page_dropDownContainer__v1C0M {
     margin-left: 5%;
@@ -574,7 +609,7 @@ Drop Down Menu CSS
 
 .page_dropLine__pLKUK {
     margin: 2px;
-    height:2px;
+    height: 2px;
     background-color: #4796E3;
 }
 
@@ -584,15 +619,15 @@ Drop Down Menu CSS
 
 }
 
-.page_dropDownList__67f7m{
+.page_dropDownList__67f7m {
     list-style: none;
 
 }
 
 .page_dropDownListItemSubHeading__SEB07 {
-    color:#FF8D3D;
+    color: #FF8D3D;
     font-size: larger;
-    margin:0px;
+    margin: 0px;
     font-weight: 100;
 
 }
@@ -603,11 +638,15 @@ Drop Down Menu CSS
     margin: 5px;
     font-weight: 50;
 
-}   
+}
 
-@media only screen and (max-width: 900px)  and (min-width: 550px){
+@media only screen and (max-width: 900px) and (min-width: 550px) {
     .page_dropSubHeading__2MJhO {
-        font-size: 20px;
+        font-size: 16px;
+    }
+
+    .page_dropSubHeading__2MJhO::after {
+        font-size: 15px;
     }
 
     .page_dropDownListItemSubHeading__SEB07 {
@@ -619,9 +658,13 @@ Drop Down Menu CSS
     }
 }
 
-@media only screen and (max-width: 550px){
+@media only screen and (max-width: 550px) {
     .page_dropSubHeading__2MJhO {
-        font-size: 15px;
+        font-size: 13px;
+    }
+
+    .page_dropSubHeading__2MJhO::after {
+        font-size: 10px;
     }
 
     .page_dropDownListItemSubHeading__SEB07 {
@@ -662,7 +705,7 @@ Latest News Component
     background-color: #f9f9f9;
     border-radius: 9px;
     padding: 30px;
-    
+
 }
 
 .page_latestNewsTitle__GVoUF {
@@ -678,11 +721,67 @@ Latest News Component
 
 }
 
-.page_latestNewsText__R3a9g{
+.page_latestNewsText__R3a9g {
     color: #3780C5;
-    margin:0px;
+    margin: 0px;
 }
 
 
 
+@media only screen and (max-width: 900px) and (min-width: 700px) {
 
+
+    .page_latestNewsText__R3a9g {
+        font-size: small;
+    }
+
+    .page_latestNewsGridItem__ERKfi {
+        padding: 15px;
+    }
+
+
+}
+
+@media only screen and (max-width: 700px) and (min-width: 500px) {
+
+    .page_latestNewsHeading__GOkE9 {
+        font-size: 33px
+    }
+
+    .page_latestNewsTitle__GVoUF,
+    .page_latestNewsDate__1TRC0 {
+        font-size: medium;
+    }
+
+    .page_latestNewsText__R3a9g {
+        font-size: x-small;
+    }
+
+    .page_latestNewsGridItem__ERKfi {
+        padding: 10px;
+    }
+
+
+}
+
+@media only screen and (max-width: 500px) {
+
+    .page_latestNewsHeading__GOkE9 {
+        font-size: 30px
+    }
+
+    .page_latestNewsTitle__GVoUF,
+    .page_latestNewsDate__1TRC0 {
+        font-size: small;
+    }
+
+    .page_latestNewsText__R3a9g {
+        font-size: xx-small;
+    }
+
+    .page_latestNewsGridItem__ERKfi {
+        padding: 5px;
+    }
+
+
+}
