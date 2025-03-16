@@ -1,0 +1,231 @@
+
+/*  
+
+AboutMeTopHeader.js
+
+
+*/
+
+@import url('https://fonts.cdnfonts.com/css/akshar-unicode');
+@import url('https://fonts.cdnfonts.com/css/reddit-sans-condensed');
+
+                
+.aboutMePage{
+    width: 100%
+}
+
+.aboutMeTopHero {
+  
+    background-image: url('./../../../public/davidexpanded.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+    background-position: center right; 
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.aboutMeTopHeroText {
+    font-family: 'Reddit Sans Condensed', sans-serif;
+   
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.aboutMeTopHeroName{
+    margin: 0px;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.aboutMeTopHeroMeet{
+    margin: 0px;
+    font-size: x-large;
+    font-weight: 600;
+}
+
+.aboutMeTopHeroHR{
+    width: 30%;
+}
+
+.aboutMeTopHeroDescriptionContainer {
+    font-family: 'Akshar Unicode', sans-serif;
+    color: #145899;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px;
+    
+}
+
+.aboutMeTopHeroDescription {
+    
+    font-size: medium;
+    font-weight: medium;
+    text-align: center;
+    width: 85%;
+    font-size: 30px;
+    letter-spacing: 1.6px;
+    
+}
+
+
+
+@media only screen and (min-width: 475px)  and (max-width: 650px) {
+    .aboutMeTopHeroName{
+
+        font-size: 50px;
+    }
+
+    .aboutMeTopHeroDescription {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .aboutMeTopHeroName{
+
+        font-size: 30px;
+    }
+
+    .aboutMeTopHeroMeet{
+   
+        font-size: 20px;
+
+    }
+
+
+    .aboutMeTopHeroDescription {
+        font-size: 20px
+    }
+   
+}
+
+
+
+/*  
+
+TimeLine.js
+
+
+*/
+
+@import url('https://fonts.cdnfonts.com/css/reddit-sans-condensed');
+@import url('https://fonts.cdnfonts.com/css/poppins');
+
+.timeLineImage {
+    height: 300px;
+    max-width: 100%;
+    margin: 20px 0px;
+    object-fit: cover;
+    object-position: 25%;
+
+}
+
+.timeLineImage2 {
+    height: 300px;
+    max-width: 100%;
+    margin: 20px 0px;
+  
+
+}
+
+
+
+.timeLineHorizontalRule {
+    width: 2px;
+    height:80px;
+    background-color: #145899;
+    border:none;
+    transform: rotate(90);
+}
+
+.timeLineHorizontalRuleContainer {
+    margin: 20px 0px;
+
+}
+
+
+.timeLineText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #145899;
+    font-family: 'Poppins', sans-serif;
+ 
+                                                
+}
+
+.timeLineHeading {
+    font-family: 'Reddit Sans Condensed', sans-serif;
+    max-width: 525px;
+    margin: 15px 0px;
+    font-weight: 600;
+    font-size: 40px;
+                                                
+}
+
+.timeLineDescription {
+    max-width: 525px;
+    margin: 20px 0px;
+    font-size: 23px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    text-align: center;
+    
+                                                
+}
+
+.timeLineImageContainer {
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 670px ) and (min-width: 525px) {
+    .timeLineDescription {
+        font-size: 20px;
+        max-width: 450px;
+    }
+    
+    .timeLineImage2 {
+        height: 250px;
+       
+    }
+}
+
+@media only screen and (min-width: 425px) and (max-width: 525px) {
+    .timeLineDescription {
+        font-size: 18px;
+        max-width: 400px;
+    }
+
+    .timeLineHeading {
+        font-size: 30px;
+    }
+
+    .timeLineImage2 {
+        height: 200px;
+       
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .timeLineDescription {
+        font-size: 15px;
+        max-width: 320px;
+    }
+
+    .timeLineHeading {
+        font-size: 30px;
+    }
+
+    .timeLineImage2 {
+        height: 150px;
+       
+    }
+}
