@@ -10,8 +10,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body style={{ margin: "0px" }}>
-       
+        <Navbar/>
         {children}
+        <Footer></Footer>
        
       </body>
     </html>
