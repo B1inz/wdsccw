@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 // File: C:\Users\Danie\Desktop\WDS Website\wdsccw\src\app\layout.js
+=======
+// File: /Users/tahaawan/Downloads/wdsccw/src/app/layout.js
+>>>>>>> ward13-page
 import * as entry from '../../../src/app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

@@ -1,5 +1,8 @@
+/*!***************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/app/ward-13/page.module.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************/
 
-.bodyContainer {
+.page_bodyContainer__qm7BN {
     font-family: Arial, sans-serif;
     color: #333;
     margin: 0 auto;
@@ -9,18 +12,18 @@
 }
 
 
-.banner {
+.page_banner__DpdZS {
     text-align: center;
     margin-bottom: 20px;
 }
 
-.bannerImage {
+.page_bannerImage__FVnq5 {
     width: 100%;
     height: auto;
 }
 
 
-.sectionHeader {
+.page_sectionHeader__zl8Dz {
     font-size: 24px;
     color: #003366;
     text-align: center;
@@ -30,25 +33,25 @@
     padding: 10px;
 }
 
-.mapsSection ul,
-.resourcesSection ul {
+.page_mapsSection__iv5a_ ul,
+.page_resourcesSection__2RnVq ul {
     list-style-type: none;
     padding: 0;
 }
 
-.mapsSection li,
-.resourcesSection li {
+.page_mapsSection__iv5a_ li,
+.page_resourcesSection__2RnVq li {
     margin-bottom: 20px;
 }
 
-.mapsSection details,
-.resourcesSection details {
+.page_mapsSection__iv5a_ details,
+.page_resourcesSection__2RnVq details {
     display: flex;
     flex-direction: column;
 }
 
 
-.summary {
+.page_summary__JnzEj {
     font-size: 18px;
     font-weight: bold;
     color: #003366;
@@ -59,15 +62,17 @@
     border: none;
     background: none;
     padding: 10px 0;
-    appearance: none; 
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none; 
     list-style: none;
 }
 
-.summary::marker {
+.page_summary__JnzEj::marker {
     display: none; 
 }
 
-.summary::after {
+.page_summary__JnzEj::after {
     content: "▼";
     font-size: 14px;
     color: #ff6600; 
@@ -75,16 +80,16 @@
     transition: transform 0.3s ease;
 }
 
-details[open] .summary::after {
+details[open] .page_summary__JnzEj::after {
     transform: rotate(180deg) translateY(1px); 
 }
 
-.summary:hover {
+.page_summary__JnzEj:hover {
     color: #ff6600;
 }
 
 
-.dropdownContent {
+.page_dropdownContent__JUt10 {
     display: flex;
     flex-direction: column;
     align-items: flex-start; 
@@ -93,7 +98,7 @@ details[open] .summary::after {
 }
 
 
-.mapContainer {
+.page_mapContainer__AVbZ4 {
     display: flex;
     align-items: center;
     justify-content: space-between; 
@@ -102,7 +107,7 @@ details[open] .summary::after {
 }
 
 
-.link {
+.page_link__exYwm {
     font-size: 1.1rem;
     font-weight: bold;
     text-decoration: none;
@@ -110,7 +115,7 @@ details[open] .summary::after {
 }
 
 
-.mapImage {
+.page_mapImage__tj5DF {
     width: 50%; 
     height: auto;
     border-radius: 5px;
@@ -118,7 +123,7 @@ details[open] .summary::after {
 
 
 
-.banner {
+.page_banner__DpdZS {
     width: 100vw;
     margin: 0;
     padding: 0;
@@ -128,7 +133,7 @@ details[open] .summary::after {
 }
 
 
-.bannerImage {
+.page_bannerImage__FVnq5 {
     width: 100%;
     height: auto;
     display: block;
@@ -136,8 +141,9 @@ details[open] .summary::after {
     padding: 0;
 }
 
-.bodyContainer {
+.page_bodyContainer__qm7BN {
     max-width: 1200px; 
     margin: 0 auto; 
     padding: 20px;
 }
+

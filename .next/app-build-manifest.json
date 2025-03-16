@@ -9,6 +9,7 @@
     "/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
+<<<<<<< HEAD
       "static/css/app/page.css",
       "static/chunks/app/page.js"
     ],
@@ -22,6 +23,15 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/contact/page.js"
+=======
+      "static/chunks/app/ward-13/page.js",
+      "static/css/app/ward-13/page.css"
+    ],
+    "/_not-found/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/_not-found/page.js"
+>>>>>>> ward13-page
     ]
   }
 }
