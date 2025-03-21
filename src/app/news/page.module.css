@@ -1,78 +1,100 @@
 .newsContainer {
     display: flex;
-    gap: 2rem;
-    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
     font-family: Arial, sans-serif;
 }
 
-.filterSidebar {
-    width: 20%;
-    border-right: 1px solid #ccc;
-    padding-right: 1rem;
+.filterContainer {
+    flex: 1;
+    margin-right: 20px;
+    background-color: #F9F9F9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .filterHeader {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 10px;
+    font-size: 1.5em;
 }
 
-.filterList {
-    list-style: none;
-    padding: 0;
+.filterOption {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
 }
 
-.filterList li {
-    margin-bottom: 0.5rem;
+.filterOption input {
+    margin-right: 10px;
 }
 
 .newsContent {
-    width: 80%;
+    flex: 3;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navigationButtons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.navigationButtons button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.navigationButtons button:hover {
+    background-color: #0056B3;
 }
 
 .headerNews {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
+    font-size: 2em;
+    text-align: center;
+    margin: 0;
 }
 
-.newsList {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+.date {
+    font-size: 1em;
+    color: #666;
+    text-align: center;
 }
 
 .newsCard {
-    display: flex;
-    gap: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 1rem;
-    background-color: #F9F9F9;
+    margin-top: 20px;
 }
 
-.newsImage {
-    width: 100px;
-    height: 100px;
-    background-color: #ddd;
-    border-radius: 8px;
-}
-
-.newsDetails {
-    flex: 1;
+.newsHeader {
+    font-size: 1.5em;
+    margin-bottom: 10px;
 }
 
 .newsTitle {
-    font-size: 1.25rem;
-    margin: 0;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.newsTitle:hover {
+    text-decoration: underline;
 }
 
 .newsDate {
-    font-size: 0.9rem;
-    color: #777;
-    margin: 0.5rem 0;
+    font-size: 0.9em;
+    color: #999;
 }
 
-.newsDescription {
-    font-size: 1rem;
-    color: #555;
-    margin: 0;
+.newsDescriptionContent {
+    margin-top: 10px;
+    line-height: 1.6;
 }

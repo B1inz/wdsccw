@@ -1,142 +1,152 @@
 "use client";
 import { useState, useEffect } from "react";
 import RSSParser from "rss-parser";
+import DOMPurify from "dompurify";
 import styles from "./page.module.css";
 export default function News() {
   const [newsItems, setNewsItems] = useState([]);
+  const [filteredItems, setFilteredItems] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [selectedFilters, setSelectedFilters] = useState([]);
   useEffect(() => {
-//   const fetchRSS = async () => {
-//     const parser = new RSSParser();
-//     try {
-//       // Fetch the feed using allorigins proxy
-//       const response = await fetch(
-//         `  https://corsproxy.io/?${encodeURIComponent(
-//           "https://us8.campaign-archive.com/feed?u=d7d8421e0c331407035def386&id=2899bf3f73"
-//         )}`
-//       );
-//       const data = await response.json();
-      
-//       // Parse the feed content (XML) from the `contents` field
-//       const feed = await parser.parseString(data.contents);
-//       console.log("Parsed Feed:", feed); // Debugging
-      
-//       // Map the items to extract relevant details
-//       const items = feed.items.map((item) => ({
-//         title: item.title,
-//         link: item.link,
-//         pubDate: item.pubDate,
-//         description: item.contentSnippet || item.content,
-//       }));
-      
-//       setNewsItems(items);
-//     } catch (error) {
-//       console.error("Failed to fetch RSS feed:", error.message);
-//       setError(true);
-//     } finally {
-//       setLoading(false);
-//     }
-//   };
-const fetchRSS = async () => {
-  const parser = new RSSParser();
-  try {
-    // Fetch the feed directly using the proxy
-    const response = await fetch(
-      `https://corsproxy.io/?https://us8.campaign-archive.com/feed?u=d7d8421e0c331407035def386&id=2899bf3f73`
+    const fetchRSS = async () => {
+      const parser = new RSSParser();
+      try {
+        const response = await fetch(
+          `https://corsproxy.io/?https://us8.campaign-archive.com/feed?u=d7d8421e0c331407035def386&id=2899bf3f73`
+        );
+        if (!response.ok) {
+          throw new Error(
+            `Network error: ${response.status} - ${response.statusText}`
+          );
+        }
+        const xmlText = await response.text();
+        const feed = await parser.parseString(xmlText);
+        const items = feed.items
+          .map((item) => ({
+            title: item.title,
+            link: item.link,
+            pubDate: item.pubDate,
+            description: item.content || item.contentSnippet || "",
+          }))
+          .sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate));
+        setNewsItems(items);
+        setFilteredItems(items);
+      } catch (error) {
+        console.error("Error fetching or parsing RSS feed:", error.message);
+        setError(true);
+      } finally {
+        setLoading(false);
+      }
+    };
+    fetchRSS();
+  }, []);
+  const getSeasonFromDate = (dateString) => {
+    const date = new Date(dateString);
+    const month = date.getMonth();
+    const year = date.getFullYear();
+    if (month >= 8 && month <= 10) return `Fall ${year}`;
+    if (month >= 5 && month <= 7) return `Summer ${year}`;
+    if (month >= 2 && month <= 4) return `Spring ${year}`;
+    if (month === 11 || month <= 1) return `Winter ${year}`;
+    return "Previous Years";
+  };
+  const toggleFilter = (filter) => {
+    const newFilters = selectedFilters.includes(filter)
+      ? selectedFilters.filter((f) => f !== filter)
+      : [...selectedFilters, filter];
+    setSelectedFilters(newFilters);
+    if (newFilters.length === 0) {
+      setFilteredItems(newsItems);
+    } else {
+      setFilteredItems(
+        newsItems.filter((item) =>
+          newFilters.some(
+            (filter) => getSeasonFromDate(item.pubDate) === filter
+          )
+        )
+      );
+    }
+  };
+  useEffect(() => {
+    setCurrentIndex(0);
+  }, [filteredItems]);
+  const nextNewsletter = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % filteredItems.length);
+  };
+  const prevNewsletter = () => {
+    setCurrentIndex(
+      (prevIndex) =>
+        (prevIndex - 1 + filteredItems.length) % filteredItems.length
     );
-
-    if (!response.ok) {
-      throw new Error(`Network error: ${response.status} - ${response.statusText}`);
-    }
-
-    // Confirm the response content type is XML
-    const contentType = response.headers.get("content-type");
-    if (!contentType.includes("application/rss+xml")) {
-      throw new Error(`Unexpected content type: ${contentType}`);
-    }
-
-    // Get the XML response as text
-    const xmlText = await response.text();
-
-    // Use rss-parser to parse the XML feed
-    const feed = await parser.parseString(xmlText);
-    console.log("Parsed Feed:", feed); // Debugging
-
-    // Map feed items into state
-    const items = feed.items.map((item) => ({
-      title: item.title,
-      link: item.link,
-      pubDate: item.pubDate,
-      description: item.contentSnippet || item.content,
-    }));
-
-    setNewsItems(items);
-  } catch (error) {
-    console.error("Error fetching or parsing RSS feed:", error.message);
-    setError(true);
-  } finally {
-    setLoading(false);
-  }
-};
-
-
-  fetchRSS();
-}, []);
+  };
   return (
     <div className={styles.newsContainer}>
-      <div className={styles.filterSidebar}>
+      <div className={styles.filterContainer}>
         <h2 className={styles.filterHeader}>Filter</h2>
-        <ul className={styles.filterList}>
-          <li>
-            <input type="checkbox" id="fall2024" />{" "}
-            <label htmlFor="fall2024">Fall 2024</label>
-          </li>
-          <li>
-            <input type="checkbox" id="summer2024" />{" "}
-            <label htmlFor="summer2024">Summer 2024</label>
-          </li>
-          <li>
-            <input type="checkbox" id="spring2024" />{" "}
-            <label htmlFor="spring2024">Spring 2024</label>
-          </li>
-          <li>
-            <input type="checkbox" id="winter2024" />{" "}
-            <label htmlFor="winter2024">Winter 2024</label>
-          </li>
-          <li>
-            <input type="checkbox" id="previousYears" />{" "}
-            <label htmlFor="previousYears">Previous Years</label>
-          </li>
-        </ul>
+        {[
+          "Fall 2024",
+          "Summer 2024",
+          "Spring 2024",
+          "Winter 2024",
+          "Previous Years",
+        ].map((filter) => (
+          <div
+            key={filter}
+            className={styles.filterOption}
+            onClick={() => toggleFilter(filter)}
+          >
+            <input
+              type="checkbox"
+              checked={selectedFilters.includes(filter)}
+              readOnly
+            />
+            {filter}
+          </div>
+        ))}
       </div>
       <div className={styles.newsContent}>
-        <h1 className={styles.headerNews}>Recent Newsletters</h1>
+        <div className={styles.navigationButtons}>
+          <button onClick={prevNewsletter}>&lt;</button>
+          <button onClick={nextNewsletter}>&gt;</button>
+        </div>
+        <center>
+          <h1 className={styles.headerNews}>Title of Newsletter</h1>
+        </center>
+        <center>
+          <p className={styles.date}>Month, Day, Year</p>
+        </center>
         {error ? (
           <p>Error loading newsletters. Please try again later.</p>
         ) : loading ? (
           <p>Loading...</p>
-        ) : newsItems.length > 0 ? (
-          <div className={styles.newsList}>
-            {newsItems.map((item, index) => (
-              <div className={styles.newsCard} key={index}>
-                <div className={styles.newsImage}></div>
-                <div className={styles.newsDetails}>
-                  <a
-                    href={item.link}
-                    className={styles.newsTitle}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {item.title}
-                  </a>
-                  <p className={styles.newsDate}>
-                    {new Date(item.pubDate).toLocaleDateString()}
-                  </p>
-                  <p className={styles.newsDescription}>{item.description}</p>
-                </div>
-              </div>
-            ))}
+        ) : filteredItems.length > 0 ? (
+          <div className={styles.newsCard}>
+            <div className={styles.newsHeader}>
+              <a
+                href={filteredItems[currentIndex].link}
+                className={styles.newsTitle}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {filteredItems[currentIndex].title}
+              </a>
+            </div>
+            <p className={styles.newsDate}>
+              {new Date(
+                filteredItems[currentIndex].pubDate
+              ).toLocaleDateString()}
+            </p>
+            <div
+              className={styles.newsDescriptionContent}
+              dangerouslySetInnerHTML={{
+                __html: DOMPurify.sanitize(
+                  filteredItems[currentIndex].description
+                ),
+              }}
+            ></div>
           </div>
         ) : (
           <p>No newsletters found.</p>
