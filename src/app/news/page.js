@@ -1,15 +1,16 @@
 "use client";
 import { useState, useEffect } from "react";
 import RSSParser from "rss-parser";
-import DOMPurify from "dompurify";
 import styles from "./page.module.css";
+
 export default function News() {
   const [newsItems, setNewsItems] = useState([]);
   const [filteredItems, setFilteredItems] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
-  const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedFilters, setSelectedFilters] = useState([]);
+  const [selectedNews, setSelectedNews] = useState(null); // Track selected news
+
   useEffect(() => {
     const fetchRSS = async () => {
       const parser = new RSSParser();
@@ -17,21 +18,26 @@ export default function News() {
         const response = await fetch(
           `https://corsproxy.io/?https://us8.campaign-archive.com/feed?u=d7d8421e0c331407035def386&id=2899bf3f73`
         );
+
         if (!response.ok) {
           throw new Error(
             `Network error: ${response.status} - ${response.statusText}`
           );
         }
+
         const xmlText = await response.text();
         const feed = await parser.parseString(xmlText);
+
         const items = feed.items
           .map((item) => ({
             title: item.title,
             link: item.link,
             pubDate: item.pubDate,
             description: item.content || item.contentSnippet || "",
+            thumbnail: item.enclosure?.url || "default-thumbnail.jpg", // Extract thumbnail if available
           }))
           .sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate));
+
         setNewsItems(items);
         setFilteredItems(items);
       } catch (error) {
@@ -41,23 +47,30 @@ export default function News() {
         setLoading(false);
       }
     };
+
     fetchRSS();
   }, []);
+
   const getSeasonFromDate = (dateString) => {
     const date = new Date(dateString);
     const month = date.getMonth();
     const year = date.getFullYear();
+
     if (month >= 8 && month <= 10) return `Fall ${year}`;
     if (month >= 5 && month <= 7) return `Summer ${year}`;
     if (month >= 2 && month <= 4) return `Spring ${year}`;
     if (month === 11 || month <= 1) return `Winter ${year}`;
+
     return "Previous Years";
   };
+
   const toggleFilter = (filter) => {
     const newFilters = selectedFilters.includes(filter)
       ? selectedFilters.filter((f) => f !== filter)
       : [...selectedFilters, filter];
+
     setSelectedFilters(newFilters);
+
     if (newFilters.length === 0) {
       setFilteredItems(newsItems);
     } else {
@@ -70,20 +83,10 @@ export default function News() {
       );
     }
   };
-  useEffect(() => {
-    setCurrentIndex(0);
-  }, [filteredItems]);
-  const nextNewsletter = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % filteredItems.length);
-  };
-  const prevNewsletter = () => {
-    setCurrentIndex(
-      (prevIndex) =>
-        (prevIndex - 1 + filteredItems.length) % filteredItems.length
-    );
-  };
+
   return (
     <div className={styles.newsContainer}>
+      {/* Filter Section */}
       <div className={styles.filterContainer}>
         <h2 className={styles.filterHeader}>Filter</h2>
         {[
@@ -107,49 +110,61 @@ export default function News() {
           </div>
         ))}
       </div>
+
+      {/* News Section */}
       <div className={styles.newsContent}>
-        <div className={styles.navigationButtons}>
-          <button onClick={prevNewsletter}>&lt;</button>
-          <button onClick={nextNewsletter}>&gt;</button>
-        </div>
-        <center>
-          <h1 className={styles.headerNews}>Title of Newsletter</h1>
-        </center>
-        <center>
-          <p className={styles.date}>Month, Day, Year</p>
-        </center>
-        {error ? (
-          <p>Error loading newsletters. Please try again later.</p>
-        ) : loading ? (
-          <p>Loading...</p>
-        ) : filteredItems.length > 0 ? (
-          <div className={styles.newsCard}>
-            <div className={styles.newsHeader}>
-              <a
-                href={filteredItems[currentIndex].link}
-                className={styles.newsTitle}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {filteredItems[currentIndex].title}
-              </a>
-            </div>
+        {selectedNews ? (
+          // Show Selected Newsletter
+          <div className={styles.newsDetail}>
+            <button
+              className={styles.backButton}
+              onClick={() => setSelectedNews(null)}
+            >
+              ← Back
+            </button>
+            <h2 className={styles.newsTitle}>{selectedNews.title}</h2>
             <p className={styles.newsDate}>
-              {new Date(
-                filteredItems[currentIndex].pubDate
-              ).toLocaleDateString()}
+              {new Date(selectedNews.pubDate).toLocaleDateString()}
             </p>
+            <img
+              src={selectedNews.thumbnail}
+              alt="Thumbnail"
+              className={styles.thumbnailLarge}
+            />
             <div
               className={styles.newsDescriptionContent}
-              dangerouslySetInnerHTML={{
-                __html: DOMPurify.sanitize(
-                  filteredItems[currentIndex].description
-                ),
-              }}
+              dangerouslySetInnerHTML={{ __html: selectedNews.description }}
             ></div>
           </div>
         ) : (
-          <p>No newsletters found.</p>
+          // Show List of Newsletters
+          <div className={styles.newsGrid}>
+            {error ? (
+              <p>Error loading newsletters. Please try again later.</p>
+            ) : loading ? (
+              <p>Loading...</p>
+            ) : filteredItems.length > 0 ? (
+              filteredItems.map((item, index) => (
+                <div
+                  key={index}
+                  className={styles.newsCard}
+                  onClick={() => setSelectedNews(item)}
+                >
+                  <img
+                    src="/attachment_720.jpg"
+                    alt="Thumbnail"
+                    className={styles.newsThumbnail}
+                  />
+                  <h3 className={styles.newsTitle}>{item.title}</h3>
+                  <p className={styles.newsDate}>
+                    {new Date(item.pubDate).toLocaleDateString()}
+                  </p>
+                </div>
+              ))
+            ) : (
+              <p>No newsletters found.</p>
+            )}
+          </div>
         )}
       </div>
     </div>
