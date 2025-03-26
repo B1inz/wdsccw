@@ -14,7 +14,7 @@ const Navbar = () => {
                     <div className={styles.dropdown}>
                         <button className={styles.dropBtn}>About Me▾</button>
                         <div className={styles.dropMenu}>
-                            <a href="/about-me" className={styles.links}>My Message</a>
+                            <a href="/my-message" className={styles.links}>My Message</a>
                             <a href="/contact" className={styles.links}>Contact</a>
                         </div>
                     </div>
