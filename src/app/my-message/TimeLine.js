@@ -43,7 +43,7 @@ export default function TimeLine(props) {
     {image2 ? 
     
     <div className={styles.timeLineImageContainer} >
-        <img className={styles.timeLineImage} src= {image2}></img>
+        <img className={styles.timeLineImage2} src= {image2}></img>
     </div>
     
     : ''

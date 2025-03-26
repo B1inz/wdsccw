@@ -73,7 +73,7 @@
         sans-serif;
 }
 
-@media only screen and (max-width: 975px) and (min-width: 580px) {
+@media only screen and (max-width: 975px)  and (min-width: 580px){
     .newsletterSection {
         padding: 3rem 2rem;
     }
@@ -93,11 +93,11 @@
     }
 }
 
-@media only screen and (max-width: 580px) {
+@media only screen and (max-width: 580px){
     .newsletterSection {
         padding: 3rem 1rem;
         flex-wrap: wrap;
-
+       
     }
 
     .input {
