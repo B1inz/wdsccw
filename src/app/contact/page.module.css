@@ -1,0 +1,75 @@
+/* Apply font family to the entire form */
+.formContainer,
+.form,
+.label,
+.input,
+.textarea,
+.button {
+    font-family: Arial, sans-serif;
+}
+
+.formContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+}
+
+.label {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.input,
+.textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+.button {
+    background-color: #ff7e00;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #e76f00;
+}
+
+/* Error styling for invalid email input */
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: -8px;
+    margin-bottom: 16px;
+}
