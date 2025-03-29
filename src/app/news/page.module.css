@@ -150,3 +150,25 @@
     border-radius: 8px;
     margin-bottom: 10px;
 }
+
+.newsContainer {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.mainContent {
+    display: flex;
+    flex-grow: 1;
+}
+
+.filterContainer {
+    width: 250px;
+    padding: 20px;
+    border-right: 2px solid #ddd;
+}
+
+.newsContent {
+    flex-grow: 1;
+    padding: 20px;
+}

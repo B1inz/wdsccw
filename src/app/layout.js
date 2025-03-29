@@ -1,4 +1,5 @@
 "use client"
+import { Suspense } from "react";
 import Navbar from "./components/header/header"
 import Footer from "./components/footer/footer"
 import { SessionProvider } from "next-auth/react";
@@ -14,7 +15,7 @@ export default function RootLayout({ children }) {
       <html lang="en">
         <body style={{ margin: "0px" }}>
           <Navbar/>
-          {children}
+        <Suspense fallback={<div>Loading...</div>}>{children}</Suspense>
           <Footer></Footer>
         
         </body>
