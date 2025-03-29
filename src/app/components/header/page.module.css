@@ -9,26 +9,33 @@
     background: #013567;
     color: white;
     font-family: "Schibsted Grotesk", sans-serif;
+    align-items: center;
   }
 
-  .logoImg {
-    position: absolute;
-    scale: 1;
-    top: 0.6rem;
-    left: 1rem;
+  .navLinks {
+    display: flex;
+    gap: 30px;
+    margin-right: 20px;
+  
+  }
+
+  .logoImgLink {
+    margin-right: 10px;
   }
   
   .links {
-    padding-top: 4rem;
-    padding-right: 1.5rem;
-    padding-left: 1.5rem;
+    
+
     text-decoration: none;
     color:white;
     font-size: 1.5rem;
     font-style: normal;
     font-weight: 400;
     letter-spacing: 0.0375rem;
+    
   }
+
+
 
   .dropdown {
     display: inline-table;
@@ -41,8 +48,6 @@
     font-style: normal;
     font-weight: 400;
     letter-spacing: 0.0375rem;
-    padding-right: 1.5rem;
-    padding-left: 1.5rem;
     border: none;
     outline: none;
     color: white;
@@ -66,7 +71,7 @@
 
   .dropMenu a {
     float: none;
-    color: #CDCDCD;
+    color: #000;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -80,3 +85,123 @@
   .dropdown:hover .dropMenu {
     display: block;
   }
+
+  .links:hover, .dropBtn:hover{
+    color: #f60
+  }
+
+
+
+  
+@media only screen and (max-width: 1100px) {
+  .logoImg, .logoImgLink {
+    width: 350px;
+  }
+
+  .navLinks {
+    gap: 15px;
+  }
+  
+
+}
+
+
+@media only screen and (max-width: 900px)  and (min-width: 700px){
+  .logoImg, .logoImgLink {
+    width: 250px;
+  }
+
+  .navLinks {
+    gap: 12px;
+  }
+  
+  .dropdown .dropBtn{
+    font-size: 18px;
+  }
+
+  .links {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 700px)  and (min-width: 500px){
+  .logoImg, .logoImgLink {
+    width: 150px;
+  }
+
+  .navLinks {
+    gap: 10px;
+  }
+  
+  .dropdown .dropBtn{
+    font-size: 14px;
+  }
+
+  .links {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 500px) and (min-width: 350px) {
+  .logoImg, .logoImgLink {
+    width: 100px;
+  }
+
+  .navLinks {
+    gap: 8px;
+  }
+  
+  .dropdown .dropBtn{
+    font-size: 12px;
+  }
+
+  .links {
+    font-size: 12px;
+  }
+
+  .wrapper {
+    height: 100px;
+  }
+
+  .dropMenu {
+    min-width: 0px;
+  }
+
+  .dropMenu a {
+    padding: 5px 5px;
+    width: 100px;
+  }
+
+}
+
+@media only screen and (max-width: 350px){
+  .logoImg, .logoImgLink {
+    width: 80px;
+  }
+
+  .navLinks {
+    gap: 8px;
+  }
+  
+  .dropdown .dropBtn{
+    font-size: 10px;
+  }
+
+  .links {
+    font-size: 10px;
+  }
+
+  .wrapper {
+    height: 100px;
+  }
+
+  .dropMenu {
+    min-width: 0px;
+  }
+
+  .dropMenu a {
+    padding: 5px 5px;
+    width: 100px;
+  }
+
+}
