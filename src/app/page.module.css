@@ -126,6 +126,8 @@ font-family: 'Bricolage Grotesque', Arial, sans-serif;
 .topHeroSvgs {
     height: 40px;
     width: 40px;
+    stroke: white;
+    transition: 0.3s ease;
 }
 
 
@@ -135,7 +137,11 @@ font-family: 'Bricolage Grotesque', Arial, sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 0.3s ease;
+    text-decoration: none;
 }
+
+
 
 .linkButtonText {
     display: flex;
@@ -146,6 +152,16 @@ font-family: 'Bricolage Grotesque', Arial, sans-serif;
     margin-top: 0px;
     align-items: center;
     font-family: 'Bricolage Grotesque Bold', Arial, sans-serif;
+}
+
+.linkButtons:hover {
+    transition: 0.3s ease;
+    background-color: #1c3f60;;
+    .topHeroSvgs {
+        transform: scale(1.1);
+        transition: 0.3s ease;
+    }
+    
 }
 
 

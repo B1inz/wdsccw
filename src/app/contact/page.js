@@ -1,6 +1,7 @@
 "use client"; // Mark this as a client component
 
-import { useState } from 'react';
+import emailjs from '@emailjs/browser';
+import { useState, useEffect } from 'react';
 import styles from './page.module.css';
 
 export default function ContactForm() {
@@ -14,6 +15,17 @@ export default function ContactForm() {
     email: '',
   });
 
+  const [submissionCount, setSubmissionCount] = useState(0);
+  const maxSubmissions = 3;
+
+  // Load submission count from localStorage when the component mounts
+  useEffect(() => {
+    const savedCount = localStorage.getItem('submissionCount');
+    if (savedCount) {
+      setSubmissionCount(parseInt(savedCount, 10));
+    }
+  }, []);
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -25,7 +37,11 @@ export default function ContactForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Validate the email field
+    if (submissionCount >= maxSubmissions) {
+      alert('Submission limit reached. You cannot submit more than 3 messages.');
+      return;
+    }
+
     if (!validateEmail(formData.email)) {
       setFormErrors({
         ...formErrors,
@@ -34,11 +50,35 @@ export default function ContactForm() {
       return;
     }
 
-    // Clear errors if validation is successful
     setFormErrors({ email: '' });
 
-    // Form submission logic here
-    alert('Form submitted successfully!');
+    const serviceID = 'service_pzpt2ea';
+    const templateID = 'template_9iaz09e';
+    const publicKey = '5aiKCjojtRSA7VLe7';
+
+    const templateParams = {
+      fullName: formData.fullName,
+      email: formData.email,
+      message: formData.message,
+    };
+
+    emailjs.send(serviceID, templateID, templateParams, publicKey)
+      .then((response) => {
+        alert('Form submitted successfully!');
+        setFormData({
+          fullName: '',
+          email: '',
+          message: '',
+        });
+
+        const newCount = submissionCount + 1;
+        setSubmissionCount(newCount);
+        localStorage.setItem('submissionCount', newCount); // Store count in localStorage
+      })
+      .catch((error) => {
+        console.error('Failed to send message:', error);
+        alert('Failed to send message. Please try again later.');
+      });
   };
 
   const validateEmail = (email) => {
@@ -61,6 +101,7 @@ export default function ContactForm() {
           placeholder="Full Name"
           className={styles.input}
           required
+          disabled={submissionCount >= maxSubmissions}
         />
 
         <label htmlFor="email" className={styles.label}>
@@ -75,6 +116,7 @@ export default function ContactForm() {
           placeholder="Email"
           className={styles.input}
           required
+          disabled={submissionCount >= maxSubmissions}
         />
         {formErrors.email && <p className={styles.error}>{formErrors.email}</p>}
 
@@ -89,11 +131,22 @@ export default function ContactForm() {
           placeholder="Message"
           className={styles.textarea}
           required
+          disabled={submissionCount >= maxSubmissions}
         ></textarea>
 
-        <button type="submit" className={styles.button}>
-          Send
+        <button
+          type="submit"
+          className={styles.button}
+          disabled={submissionCount >= maxSubmissions}
+        >
+          {submissionCount >= maxSubmissions ? 'Limit Reached' : 'Send'}
         </button>
+
+        {submissionCount >= maxSubmissions && (
+          <p className={styles.error}>
+            You have reached the submission limit. Please try again later.
+          </p>
+        )}
       </form>
     </div>
   );

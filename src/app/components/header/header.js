@@ -6,10 +6,10 @@ const Navbar = () => {
     return(
         <>
             <nav className={styles.wrapper}>
-                <Link href ="/">
+                <Link href ="/" className={styles.logoImgLink}>
                     <img className={styles.logoImg} src="logo.png"/>
                 </Link>
-                <div className={styles.links}>
+                <div className={`${styles.navLinks} ${styles.links}`}>
                     <a href="/ward-13" className={styles.links}>Ward 13</a>
                     <div className={styles.dropdown}>
                         <button className={styles.dropBtn}>About Me▾</button>
@@ -18,12 +18,13 @@ const Navbar = () => {
                             <a href="/contact" className={styles.links}>Contact</a>
                         </div>
                     </div>
-                    <div className={styles.dropdown}>
+                    <div className={styles.dropdown}>   
                         <button className={styles.dropBtn}>Join▾</button>
                         <div className={styles.dropMenu}>
                             <a href="/volunteer" className={styles.links}>Volunteer</a>
                             <a href="/newsletter" className={styles.links}>Newsletter</a>
                         </div>
+                   
                     </div>
                     <a href="/news" className={styles.links}>News</a>
                     <a href="/videos" className={styles.links}>Videos</a>

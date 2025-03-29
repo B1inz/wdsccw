@@ -4,6 +4,7 @@
     "files": [
       "static/chunks/_app-pages-browser_node_modules_next_dist_client_dev_noop-turbopack-hmr_js.js"
     ]
+<<<<<<< HEAD
   },
   "..\\node_modules\\next\\dist\\client\\index.js -> ../pages/_app": {
     "id": "..\\node_modules\\next\\dist\\client\\index.js -> ../pages/_app",
@@ -16,5 +17,7 @@
     "files": [
       "static/chunks/node_modules_next_dist_pages__error_js.js"
     ]
+=======
+>>>>>>> 244a524ac6999c1955307b0c58171a68ad435ccd
   }
 }

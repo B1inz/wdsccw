@@ -12,6 +12,7 @@
       "static/css/app/page.css",
       "static/chunks/app/page.js"
     ],
+<<<<<<< HEAD
     "/ward-13/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -71,6 +72,8 @@
       "static/css/app/contact/layout.css",
       "static/chunks/app/contact/layout.js"
     ],
+=======
+>>>>>>> 244a524ac6999c1955307b0c58171a68ad435ccd
     "/_not-found/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
