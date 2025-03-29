@@ -3,6 +3,10 @@ import styles from './page.module.css'
 import AboutMeTopHero from './AboutMeTopHero'
 import TimeLine from './TimeLine'
 import TimeLineContent from './TimeLineContent'
+import { metadata } from "./metadata";
+
+export {metadata};
+
 export default function page() {
   return (
     <div className={styles.aboutMePage}>

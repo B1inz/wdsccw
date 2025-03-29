@@ -7,9 +7,10 @@ import DropDownInfo from "./DropDownInfo";
 import dropDownText from "./dropDownText";
 import LatestNews from "./LatestNews.jsx";
 
+
 export default function Home() {
 
-  return (
+  return ( 
     <div>
       <TopHero />
       <AboutMe/>

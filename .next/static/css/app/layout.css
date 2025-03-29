@@ -65,6 +65,7 @@
     white-space: nowrap;
     font-family: "Schibsted Grotesk",
         sans-serif;
+    text-align: center;
 }
 
 .page_consentText__hzn3b {
@@ -73,6 +74,135 @@
     color: #ffffff;
     font-family: "Schibsted Grotesk",
         sans-serif;
+}
+
+/* Social Links Section */
+.page_socialLinks__ucis4 {
+    padding: 1.5rem;
+    background-color: #145899;
+    /* Blue background */
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Schibsted Grotesk", sans-serif;
+    text-align: center;
+    flex-direction: column;
+}
+
+.page_socialContainer__EF73r {
+    display: flex;
+    gap: 0.5rem;
+    /* Smaller gap between icons */
+    justify-content: center;
+    align-items: center;
+    background-color: #145899;
+    /* Blue container */
+    padding: 0.5rem;
+    /* Padding around the icons */
+    border-radius: 10px;
+    /* Rounded corners for the container */
+}
+
+.page_socialIcon__kq6Ib img {
+    width: 40px !important;
+    /* Forcibly small size */
+    height: 40px !important;
+    /* Forcibly small size */
+    max-width: 40px !important;
+    /* Force max width */
+    max-height: 40px !important;
+    /* Force max height */
+    transition: transform 0.3s ease;
+}
+
+@media only screen and (max-width: 975px)  and (min-width: 580px){
+    .page_newsletterSection__5kopb {
+        padding: 3rem 2rem;
+    }
+
+    .page_input__dcYd2 {
+        min-width: 100px;
+        width: 100px;
+    }
+
+    .page_heading__aIZIV {
+        font-size: 1.5rem;
+        padding-right: 1rem;
+    }
+
+    .page_submitButton__qWXZk {
+        width: 125px;
+    }
+}
+
+@media only screen and (max-width: 580px){
+    .page_newsletterSection__5kopb {
+        padding: 3rem 1rem;
+        flex-wrap: wrap;
+       
+    }
+
+    .page_input__dcYd2 {
+        min-width: 75px;
+        width: 75px;
+    }
+
+    .page_heading__aIZIV {
+        font-size: 1rem;
+        padding-right: 0.25rem;
+    }
+
+    .page_submitButton__qWXZk {
+        width: 75px;
+        padding: 0px;
+    }
+
+    .page_newsletterForm__4VooX {
+        gap: 0.25rem
+    }
+
+    /* Social Links Section */
+    .page_socialLinks__ucis4 {
+        padding: 1.5rem;
+        background-color: #145899;
+        /* Blue background */
+        color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Schibsted Grotesk", sans-serif;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .page_socialContainer__EF73r {
+        display: flex;
+        gap: 0.5rem;
+        /* Smaller gap between icons */
+        justify-content: center;
+        align-items: center;
+        background-color: #145899;
+        /* Blue container */
+        padding: 0.5rem;
+        /* Padding around the icons */
+        border-radius: 10px;
+        /* Rounded corners for the container */
+    }
+
+    .page_socialIcon__kq6Ib img {
+        width: 20px !important;
+        /* Forcibly small size */
+        height: 20px !important;
+        /* Forcibly small size */
+        max-width: 20px !important;
+        /* Force max width */
+        max-height: 20px !important;
+        /* Force max height */
+        transition: transform 0.3s ease;
+    }
+
+
 }
 /*!*************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/app/components/header/page.module.css ***!

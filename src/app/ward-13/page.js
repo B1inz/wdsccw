@@ -1,5 +1,10 @@
 import styles from "./page.module.css";
 
+export const metadata = {
+    title: 'Ward 13',
+    description: 'Learn more about ward 13',
+};
+
 export default function Ward13() {
     return (
         <>
