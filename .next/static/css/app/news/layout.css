@@ -155,3 +155,25 @@
     border-radius: 8px;
     margin-bottom: 10px;
 }
+
+.page_newsContainer__dS5M8 {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.page_mainContent__SNyfc {
+    display: flex;
+    flex-grow: 1;
+}
+
+.page_filterContainer__nNUgI {
+    width: 250px;
+    padding: 20px;
+    border-right: 2px solid #ddd;
+}
+
+.page_newsContent__QvPyO {
+    flex-grow: 1;
+    padding: 20px;
+}

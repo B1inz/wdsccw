@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 // File: C:\Users\1xiea\wdsccw\src\app\page.js
-=======
-// File: C:\Users\Danie\Desktop\WDS Website\wdsccw\src\app\page.js
->>>>>>> 244a524ac6999c1955307b0c58171a68ad435ccd
 import * as entry from '../../../src/app/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

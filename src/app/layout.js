@@ -1,8 +1,5 @@
-"use client"
-import { Suspense } from "react";
 import Navbar from "./components/header/header"
 import Footer from "./components/footer/footer"
-import { SessionProvider } from "next-auth/react";
 
 export const metadata = {
   title: {
@@ -15,16 +12,12 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <SessionProvider>
-      <html lang="en">
-        <body style={{ margin: "0px" }}>
-          <Navbar/>
-        <Suspense fallback={<div>Loading...</div>}>{children}</Suspense>
-          <Footer></Footer>
-        
-        </body>
-      </html>
-    </SessionProvider>
-
-  )
+    <html lang="en">
+      <body style={{ margin: "0px" }}>
+        <Navbar/>
+        {children}
+        <Footer/>
+      </body>
+    </html>
+  );
 }

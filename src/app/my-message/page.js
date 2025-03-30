@@ -3,9 +3,11 @@ import styles from './page.module.css'
 import AboutMeTopHero from './AboutMeTopHero'
 import TimeLine from './TimeLine'
 import TimeLineContent from './TimeLineContent'
-import { metadata } from "./metadata";
 
-export {metadata};
+export const metadata = {
+  title: 'My Message',
+  description: 'Learn about me and the city I want to create',
+}
 
 export default function page() {
   return (

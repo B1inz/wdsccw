@@ -15,13 +15,13 @@ export async function POST(req) {
       port: 587,
       auth: {
         user: "api", // Mailtrap user
-        pass: "0b46a9aecd846cfdaa9201969cad7868", // Mailtrap pass
+        pass: "a83026b2acf75dec7e2ba7d0c831c9d4", // Mailtrap pass
       },
     });
 
     // Send email using Mailtrap
     const info = await transporter.sendMail({
-      from: '"Ward 13 Admin" <hello@demomailtrap.co>', // Sender address
+      from: '"Ward 13 Admin" <hello@tiagoalves.ca>', // Sender address
       to: email, // Recipient
       subject: "Email Verification",
       text: "Please verify your email by clicking the link below.",

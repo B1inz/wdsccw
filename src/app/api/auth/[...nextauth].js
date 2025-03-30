@@ -9,10 +9,10 @@ export const authOptions = {
         port: 587,
         auth: {
           user: "api",
-          pass: "0b46a9aecd846cfdaa9201969cad7868",
+          pass: "a83026b2acf75dec7e2ba7d0c831c9d4",
         },
       },
-      from: "hello@demomailtrap.co",
+      from: "hello@tiagoalves.ca",
     }),
   ],
   pages: {

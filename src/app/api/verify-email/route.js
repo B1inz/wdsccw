@@ -3,7 +3,8 @@ import jwt from "jsonwebtoken";
 
 // Allowed emails - Move these to ENV later for security
 const allowedEmails = [
-  "brandonlin828@gmail.com"
+  "brandonlin828@gmail.com",
+  "1xieaar@gmail.com"
 ];
 
 export async function POST(req) {

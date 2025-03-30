@@ -4,4 +4,5 @@ export const metadata = {
   title: 'Videos',
   description: "Learn more about ward 13",
 };
+
 export default Videos;
