@@ -133,7 +133,7 @@
     }
 }
 
-@media only screen and (max-width: 580px){
+@media only screen and (max-width: 580px) and (min-width: 390px){
     .newsletterSection {
         padding: 3rem 1rem;
         flex-wrap: wrap;
@@ -197,6 +197,82 @@
         max-height: 20px !important;
         /* Force max height */
         transition: transform 0.3s ease;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 390px){
+    .newsletterSection {
+        padding: 3rem 0.5rem;
+        flex-wrap: wrap;
+       
+    }
+
+    .input {
+        min-width: 75px;
+        width: 75px;
+    }
+
+    .heading {
+        font-size: 1rem;
+        padding-right: 0.25rem;
+    }
+
+    .submitButton {
+        width: 75px;
+        padding: 0px;
+    }
+
+    .newsletterForm {
+        gap: 0.25rem;   
+     
+    }
+
+    /* Social Links Section */
+    .socialLinks {
+        padding: 1.5rem;
+        background-color: #145899;
+        /* Blue background */
+        color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Schibsted Grotesk", sans-serif;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .socialContainer {
+        display: flex;
+        gap: 0.5rem;
+        /* Smaller gap between icons */
+        justify-content: center;
+        align-items: center;
+        background-color: #145899;
+        /* Blue container */
+        padding: 0.5rem;
+        /* Padding around the icons */
+        border-radius: 10px;
+        /* Rounded corners for the container */
+    }
+
+    .socialIcon img {
+        width: 20px !important;
+        /* Forcibly small size */
+        height: 20px !important;
+        /* Forcibly small size */
+        max-width: 20px !important;
+        /* Force max width */
+        max-height: 20px !important;
+        /* Force max height */
+        transition: transform 0.3s ease;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
     }
 
 
