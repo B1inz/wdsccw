@@ -1,8 +1,3 @@
 {
-  "/api/send-email/route": "app/api/send-email/route.js",
-  "/page": "app/page.js",
-  "/ward-13/page": "app/ward-13/page.js",
-  "/my-message/page": "app/my-message/page.js",
-  "/videos/page": "app/videos/page.js",
-  "/admin/page": "app/admin/page.js"
+  "/page": "app/page.js"
 }
