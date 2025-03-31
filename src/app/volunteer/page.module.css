@@ -1,3 +1,4 @@
+/* Global box-sizing applied within the container */
 .container :global(*) {
   box-sizing: border-box;
 }
@@ -11,12 +12,13 @@
   padding: 20px;
 }
 
-
+/* Ensure images inside .container are responsive */
 .container :global(img) {
   max-width: 100%;
   height: auto;
 }
 
+/* Header Section */
 .header {
   margin-bottom: 30px;
 }
@@ -86,6 +88,9 @@
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
   padding: 20px;
   margin-bottom: 30px;
+  
+  /* 1) Let the calendar scroll horizontally if it doesn't fit */
+  overflow-x: auto;
 }
 
 .monthTitle {
@@ -375,7 +380,7 @@
   background-color: #e67615;
 }
 
-
+/* Mobile-specific adjustments */
 @media (max-width: 768px) {
   .container {
     padding: 10px;
@@ -387,7 +392,6 @@
   .headerImage {
     width: 100%;
     height: auto;
- 
     aspect-ratio: 3 / 2;
   }
   .formRow {
@@ -416,6 +420,14 @@
   .calendar {
     width: 90%;
   }
+  /* 2) Smaller font and padding so 7 squares are less likely to overflow */
+  .calendarGrid {
+    gap: 4px;
+  }
+  .calendarDay {
+    font-size: 0.85rem;
+    padding: 6px;
+  }
   .signupTitle {
     font-size: 1.25rem;
   }
@@ -424,4 +436,3 @@
     padding: 8px 10px;
   }
 }
-
