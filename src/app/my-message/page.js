@@ -6,7 +6,7 @@ import TimeLineContent from './TimeLineContent'
 
 export const metadata = {
   title: 'My Message',
-  description: 'Learn about me and the city I want to create',
+  description: 'Learn about David Ferreira and the city he wants to create',
 }
 
 export default function page() {

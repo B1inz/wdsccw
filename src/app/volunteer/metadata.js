@@ -1,4 +1,4 @@
 export const metadata = {
   title: 'Volunteer',
-  description: 'Volunteer your time to help ward 13',
+  description: 'Looking to help the city of London or David Ferriera\'s campaign? Learn about all the volunteer opportunties available for you!',
 };

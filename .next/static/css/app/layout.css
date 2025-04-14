@@ -136,7 +136,7 @@
     }
 }
 
-@media only screen and (max-width: 580px){
+@media only screen and (max-width: 580px) and (min-width: 390px){
     .page_newsletterSection__5kopb {
         padding: 3rem 1rem;
         flex-wrap: wrap;
@@ -200,6 +200,82 @@
         max-height: 20px !important;
         /* Force max height */
         transition: transform 0.3s ease;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 390px){
+    .page_newsletterSection__5kopb {
+        padding: 3rem 0.5rem;
+        flex-wrap: wrap;
+       
+    }
+
+    .page_input__dcYd2 {
+        min-width: 75px;
+        width: 75px;
+    }
+
+    .page_heading__aIZIV {
+        font-size: 1rem;
+        padding-right: 0.25rem;
+    }
+
+    .page_submitButton__qWXZk {
+        width: 75px;
+        padding: 0px;
+    }
+
+    .page_newsletterForm__4VooX {
+        gap: 0.25rem;   
+     
+    }
+
+    /* Social Links Section */
+    .page_socialLinks__ucis4 {
+        padding: 1.5rem;
+        background-color: #145899;
+        /* Blue background */
+        color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Schibsted Grotesk", sans-serif;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .page_socialContainer__EF73r {
+        display: flex;
+        gap: 0.5rem;
+        /* Smaller gap between icons */
+        justify-content: center;
+        align-items: center;
+        background-color: #145899;
+        /* Blue container */
+        padding: 0.5rem;
+        /* Padding around the icons */
+        border-radius: 10px;
+        /* Rounded corners for the container */
+    }
+
+    .page_socialIcon__kq6Ib img {
+        width: 20px !important;
+        /* Forcibly small size */
+        height: 20px !important;
+        /* Forcibly small size */
+        max-width: 20px !important;
+        /* Force max width */
+        max-height: 20px !important;
+        /* Force max height */
+        transition: transform 0.3s ease;
+    }
+
+    .page_container__Ibuv6 {
+        display: flex;
+        flex-direction: column;
     }
 
 

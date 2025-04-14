@@ -6,8 +6,7 @@ export const metadata = {
     template: 'David Ferreira | %s',
     default: 'David Ferreira',
   },
-  description: 'Learn more about city councilor David Ferreira',
-  keywords: "david ferreira, ward 13, london city councilor, london election, london ward 13",
+  description: 'Learn more about city councilor David Ferreira and his vision to improve Ward 13 and London'
 }
 
 export default function RootLayout({ children }) {

@@ -2,7 +2,7 @@ import styles from "./page.module.css";
 
 export const metadata = {
     title: 'Ward 13',
-    description: 'Learn more about ward 13',
+    description: 'Learn more about David Ferreira\'s electoral ward',
 };
 
 export default function Ward13() {

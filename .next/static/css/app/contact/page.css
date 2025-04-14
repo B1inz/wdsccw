@@ -1,0 +1,83 @@
+/*!***************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/app/contact/page.module.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************/
+/* Apply font family to the entire form */
+.page_formContainer__UE5_i,
+.page_form__arM1T,
+.page_label__zFMfb,
+.page_input__4_GuJ,
+.page_textarea__ppW_b,
+.page_button__zgLyj {
+    font-family: Arial, sans-serif;
+}
+
+/* Updated form container with background image */
+.page_formContainer__UE5_i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('/IMG_8755.jpg');
+    /* Path to the image */
+    background-size: cover;
+    background-position: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.page_form__arM1T {
+    background-color: rgba(255, 255, 255, 0.9);
+    /* Light background for contrast */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+}
+
+.page_label__zFMfb {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.page_input__4_GuJ,
+.page_textarea__ppW_b {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.page_textarea__ppW_b {
+    resize: vertical;
+    height: 150px;
+}
+
+.page_button__zgLyj {
+    background-color: #ff7e00;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.page_button__zgLyj:hover {
+    background-color: #e76f00;
+}
+
+/* Error message styles */
+.page_error__KWjIT {
+    color: red;
+    font-size: 12px;
+    margin-top: 8px;
+    text-align: center;
+}
