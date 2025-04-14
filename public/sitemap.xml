@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>https://wdsccw.vercel.app/</loc>
+  <lastmod>2025-04-14T14:57:57+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://wdsccw.vercel.app/ward-13</loc>
+  <lastmod>2025-04-14T14:57:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wdsccw.vercel.app/my-message</loc>
+  <lastmod>2025-04-14T14:57:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wdsccw.vercel.app/contact</loc>
+  <lastmod>2025-04-14T14:57:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wdsccw.vercel.app/volunteer</loc>
+  <lastmod>2025-04-14T14:57:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wdsccw.vercel.app/newsletter</loc>
+  <lastmod>2025-04-14T14:57:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wdsccw.vercel.app/news</loc>
+  <lastmod>2025-04-14T14:57:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wdsccw.vercel.app/videos</loc>
+  <lastmod>2025-04-14T14:57:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>
