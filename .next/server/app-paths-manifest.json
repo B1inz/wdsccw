@@ -1,11 +1,7 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
-  "/page": "app/page.js",
   "/ward-13/page": "app/ward-13/page.js",
-  "/my-message/page": "app/my-message/page.js",
+  "/page": "app/page.js",
   "/newsletter/page": "app/newsletter/page.js",
-  "/volunteer/page": "app/volunteer/page.js",
   "/videos/page": "app/videos/page.js",
-  "/news/page": "app/news/page.js",
-  "/contact/page": "app/contact/page.js"
+  "/volunteer/page": "app/volunteer/page.js"
 }

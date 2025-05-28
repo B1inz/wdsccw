@@ -82,11 +82,6 @@
       "static/chunks/main-app.js",
       "static/css/app/videos/page.css",
       "static/chunks/app/videos/page.js"
-    ],
-    "/_not-found/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/_not-found/page.js"
     ]
   }
 }
