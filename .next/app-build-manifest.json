@@ -6,11 +6,16 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/page": [
+    "/volunteer/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/page.css",
-      "static/chunks/app/page.js"
+      "static/chunks/app/volunteer/layout.js"
+    ],
+    "/volunteer/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/volunteer/page.css",
+      "static/chunks/app/volunteer/page.js"
     ],
     "/ward-13/page": [
       "static/chunks/webpack.js",
@@ -24,28 +29,11 @@
       "static/css/app/my-message/page.css",
       "static/chunks/app/my-message/page.js"
     ],
-    "/contact/layout": [
+    "/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/contact/layout.css",
-      "static/chunks/app/contact/layout.js"
-    ],
-    "/contact/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/contact/page.css",
-      "static/chunks/app/contact/page.js"
-    ],
-    "/volunteer/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/volunteer/layout.js"
-    ],
-    "/volunteer/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/volunteer/page.css",
-      "static/chunks/app/volunteer/page.js"
+      "static/css/app/page.css",
+      "static/chunks/app/page.js"
     ],
     "/newsletter/layout": [
       "static/chunks/webpack.js",
@@ -70,6 +58,18 @@
       "static/chunks/main-app.js",
       "static/css/app/news/page.css",
       "static/chunks/app/news/page.js"
+    ],
+    "/contact/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/contact/layout.css",
+      "static/chunks/app/contact/layout.js"
+    ],
+    "/contact/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/contact/page.css",
+      "static/chunks/app/contact/page.js"
     ],
     "/videos/layout": [
       "static/chunks/webpack.js",

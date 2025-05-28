@@ -1,0 +1,21 @@
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+self["webpackHotUpdate_N_E"]("app/news/page",{
+
+/***/ "(app-pages-browser)/./src/app/news/page.module.css":
+/*!**************************************!*\
+  !*** ./src/app/news/page.module.css ***!
+  \**************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval(__webpack_require__.ts("// extracted by mini-css-extract-plugin\nmodule.exports = {\"newsContainer\":\"page_newsContainer__dS5M8\",\"filterContainer\":\"page_filterContainer__nNUgI\",\"newsContent\":\"page_newsContent__QvPyO\",\"newsGrid\":\"page_newsGrid__s0gfV\",\"filterOption\":\"page_filterOption__LF9Id\",\"newsCard\":\"page_newsCard__HWxIl\",\"newsTitle\":\"page_newsTitle__AAHXF\",\"newsDate\":\"page_newsDate__KLZAF\",\"newsDetail\":\"page_newsDetail__HIed9\",\"backButton\":\"page_backButton__8DiOQ\",\"newsDescriptionContent\":\"page_newsDescriptionContent__cUHHn\",\"thumbnail\":\"page_thumbnail___0QiM\",\"thumbnailLarge\":\"page_thumbnailLarge__69zWn\",\"newsThumbnail\":\"page_newsThumbnail__4Pxje\",\"mainContent\":\"page_mainContent__SNyfc\"};\n    if(true) {\n      // 1748438437173\n      var cssReload = __webpack_require__(/*! ./node_modules/next/dist/compiled/mini-css-extract-plugin/hmr/hotModuleReplacement.js */ \"(app-pages-browser)/./node_modules/next/dist/compiled/mini-css-extract-plugin/hmr/hotModuleReplacement.js\")(module.id, {\"publicPath\":\"/_next/\",\"esModule\":false,\"locals\":true});\n      module.hot.dispose(cssReload);\n      \n    }\n  \nmodule.exports.__checksum = \"4410dffb67cc\"\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwcC1wYWdlcy1icm93c2VyKS8uL3NyYy9hcHAvbmV3cy9wYWdlLm1vZHVsZS5jc3MiLCJtYXBwaW5ncyI6IkFBQUE7QUFDQSxrQkFBa0I7QUFDbEIsT0FBTyxJQUFVO0FBQ2pCO0FBQ0Esc0JBQXNCLG1CQUFPLENBQUMsd01BQStGLGNBQWMsc0RBQXNEO0FBQ2pNLE1BQU0sVUFBVTtBQUNoQjtBQUNBO0FBQ0E7QUFDQSx5QkFBeUIiLCJzb3VyY2VzIjpbIkM6XFx3ZHNjY3dcXHNyY1xcYXBwXFxuZXdzXFxwYWdlLm1vZHVsZS5jc3MiXSwic291cmNlc0NvbnRlbnQiOlsiLy8gZXh0cmFjdGVkIGJ5IG1pbmktY3NzLWV4dHJhY3QtcGx1Z2luXG5tb2R1bGUuZXhwb3J0cyA9IHtcIm5ld3NDb250YWluZXJcIjpcInBhZ2VfbmV3c0NvbnRhaW5lcl9fZFM1TThcIixcImZpbHRlckNvbnRhaW5lclwiOlwicGFnZV9maWx0ZXJDb250YWluZXJfX25OVWdJXCIsXCJuZXdzQ29udGVudFwiOlwicGFnZV9uZXdzQ29udGVudF9fUXZQeU9cIixcIm5ld3NHcmlkXCI6XCJwYWdlX25ld3NHcmlkX19zMGdmVlwiLFwiZmlsdGVyT3B0aW9uXCI6XCJwYWdlX2ZpbHRlck9wdGlvbl9fTEY5SWRcIixcIm5ld3NDYXJkXCI6XCJwYWdlX25ld3NDYXJkX19IV3hJbFwiLFwibmV3c1RpdGxlXCI6XCJwYWdlX25ld3NUaXRsZV9fQUFIWEZcIixcIm5ld3NEYXRlXCI6XCJwYWdlX25ld3NEYXRlX19LTFpBRlwiLFwibmV3c0RldGFpbFwiOlwicGFnZV9uZXdzRGV0YWlsX19ISWVkOVwiLFwiYmFja0J1dHRvblwiOlwicGFnZV9iYWNrQnV0dG9uX184RGlPUVwiLFwibmV3c0Rlc2NyaXB0aW9uQ29udGVudFwiOlwicGFnZV9uZXdzRGVzY3JpcHRpb25Db250ZW50X19jVUhIblwiLFwidGh1bWJuYWlsXCI6XCJwYWdlX3RodW1ibmFpbF9fXzBRaU1cIixcInRodW1ibmFpbExhcmdlXCI6XCJwYWdlX3RodW1ibmFpbExhcmdlX182OXpXblwiLFwibmV3c1RodW1ibmFpbFwiOlwicGFnZV9uZXdzVGh1bWJuYWlsX180UHhqZVwiLFwibWFpbkNvbnRlbnRcIjpcInBhZ2VfbWFpbkNvbnRlbnRfX1NOeWZjXCJ9O1xuICAgIGlmKG1vZHVsZS5ob3QpIHtcbiAgICAgIC8vIDE3NDg0Mzg0MzcxNzNcbiAgICAgIHZhciBjc3NSZWxvYWQgPSByZXF1aXJlKFwiQzovd2RzY2N3L25vZGVfbW9kdWxlcy9uZXh0L2Rpc3QvY29tcGlsZWQvbWluaS1jc3MtZXh0cmFjdC1wbHVnaW4vaG1yL2hvdE1vZHVsZVJlcGxhY2VtZW50LmpzXCIpKG1vZHVsZS5pZCwge1wicHVibGljUGF0aFwiOlwiL19uZXh0L1wiLFwiZXNNb2R1bGVcIjpmYWxzZSxcImxvY2Fsc1wiOnRydWV9KTtcbiAgICAgIG1vZHVsZS5ob3QuZGlzcG9zZShjc3NSZWxvYWQpO1xuICAgICAgXG4gICAgfVxuICBcbm1vZHVsZS5leHBvcnRzLl9fY2hlY2tzdW0gPSBcIjQ0MTBkZmZiNjdjY1wiXG4iXSwibmFtZXMiOltdLCJpZ25vcmVMaXN0IjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///(app-pages-browser)/./src/app/news/page.module.css\n"));
+
+/***/ })
+
+});

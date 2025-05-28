@@ -1,4 +1,4 @@
-// File: C:\Users\1xiea\wdsccw\src\app\contact\layout.js
+// File: C:\wdsccw\src\app\contact\layout.js
 import * as entry from '../../../../src/app/contact/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

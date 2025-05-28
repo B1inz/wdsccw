@@ -1,4 +1,4 @@
-// File: C:\Users\1xiea\wdsccw\src\app\my-message\page.js
+// File: C:\wdsccw\src\app\my-message\page.js
 import * as entry from '../../../../src/app/my-message/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

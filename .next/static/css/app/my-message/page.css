@@ -1,7 +1,6 @@
 /*!******************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/app/my-message/page.module.css ***!
   \******************************************************************************************************************************************************************************************************************************************************************************/
-
 /*  
 
 AboutMeTopHeader.js
@@ -9,106 +8,97 @@ AboutMeTopHeader.js
 
 */
 
-@import url('https://fonts.cdnfonts.com/css/akshar-unicode');
-@import url('https://fonts.cdnfonts.com/css/reddit-sans-condensed');
+@import url("https://fonts.cdnfonts.com/css/akshar-unicode");
+@import url("https://fonts.cdnfonts.com/css/reddit-sans-condensed");
 
-                
-.page_aboutMePage___g9GV{
-    width: 100%
+.page_aboutMePage___g9GV {
+  width: 100%;
 }
 
 .page_aboutMeTopHero___aW09 {
-  
-    background-image: url(/_next/static/media/davidexpanded.1535db88.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 550px;
-    background-position: center right; 
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+  background-image: url(/_next/static/media/davidexpanded.1535db88.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 550px;
+  background-position: center right;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 .page_aboutMeTopHeroText__INgbF {
-    font-family: 'Reddit Sans Condensed', sans-serif;
-   
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 50px;
+  font-family: "Reddit Sans Condensed", sans-serif;
+
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
 }
 
-.page_aboutMeTopHeroName__xJflh{
-    margin: 0px;
-    font-size: 60px;
-    font-weight: 700;
+.page_aboutMeTopHeroName__xJflh {
+  margin: 0px;
+  font-size: 60px;
+  font-weight: 700;
 }
 
-.page_aboutMeTopHeroMeet___nD_A{
-    margin: 0px;
-    font-size: x-large;
-    font-weight: 600;
+.page_aboutMeTopHeroMeet___nD_A {
+  margin: 0px;
+  font-size: x-large;
+  font-weight: 600;
 }
 
-.page_aboutMeTopHeroHR__OFtLF{
-    width: 30%;
+.page_aboutMeTopHeroHR__OFtLF {
+  width: 30%;
 }
 
 .page_aboutMeTopHeroDescriptionContainer__YlWcM {
-    font-family: 'Akshar Unicode', sans-serif;
-    color: #145899;
-    font-weight: 600;
-    display: flex;
-    justify-content: center;
-    margin: 30px 0px;
-    
+  font-family: "Akshar Unicode", sans-serif;
+  color: #145899;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  margin: 30px 0px;
 }
 
 .page_aboutMeTopHeroDescription__N0__m {
-    
-    font-size: medium;
-    font-weight: medium;
-    text-align: center;
-    width: 85%;
-    font-size: 30px;
-    letter-spacing: 1.6px;
-    
+  font-size: medium;
+  font-weight: medium;
+  text-align: center;
+  width: 85%;
+  font-size: 30px;
+  letter-spacing: 1.6px;
 }
 
+@media only screen and (min-width: 475px) and (max-width: 650px) {
+  .page_aboutMeTopHeroName__xJflh {
+    font-size: 50px;
+  }
 
+  .page_aboutMeTopHeroDescription__N0__m {
+    font-size: 25px;
+  }
+}
 
-@media only screen and (min-width: 475px)  and (max-width: 650px) {
-    .page_aboutMeTopHeroName__xJflh{
-
-        font-size: 50px;
-    }
-
-    .page_aboutMeTopHeroDescription__N0__m {
-        font-size: 25px;
-    }
+@media only screen and (max-width: 768px) {
+  .page_timeLineHorizontalRule__cO9yB {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 500px) {
-    .page_aboutMeTopHeroName__xJflh{
+  .page_aboutMeTopHeroName__xJflh {
+    font-size: 30px;
+  }
 
-        font-size: 30px;
-    }
+  .page_aboutMeTopHeroMeet___nD_A {
+    font-size: 20px;
+  }
 
-    .page_aboutMeTopHeroMeet___nD_A{
-   
-        font-size: 20px;
-
-    }
-
-
-    .page_aboutMeTopHeroDescription__N0__m {
-        font-size: 20px
-    }
-   
+  .page_aboutMeTopHeroDescription__N0__m {
+    font-size: 20px;
+  }
 }
-
-
 
 /*  
 
@@ -117,118 +107,104 @@ TimeLine.js
 
 */
 
-@import url('https://fonts.cdnfonts.com/css/reddit-sans-condensed');
-@import url('https://fonts.cdnfonts.com/css/poppins');
+@import url("https://fonts.cdnfonts.com/css/reddit-sans-condensed");
+@import url("https://fonts.cdnfonts.com/css/poppins");
 
 .page_timeLineImage__9hPsy {
-    height: 300px;
-    max-width: 100%;
-    margin: 20px 0px;
-    object-fit: cover;
-    object-position: 25%;
-
+  height: 300px;
+  max-width: 100%;
+  margin: 20px 0px;
+  object-fit: cover;
+  object-position: 25%;
 }
 
 .page_timeLineImage2__YqWLh {
-    height: 300px;
-    max-width: 100%;
-    margin: 20px 0px;
-  
-
+  height: 300px;
+  max-width: 100%;
+  margin: 20px 0px;
 }
 
-
-
 .page_timeLineHorizontalRule__cO9yB {
-    width: 2px;
-    height:80px;
-    background-color: #145899;
-    border:none;
-    transform: rotate(90);
+  width: 2px;
+  height: 80px;
+  background-color: #145899;
+  border: none;
+  transform: rotate(90);
 }
 
 .page_timeLineHorizontalRuleContainer__iJWJp {
-    margin: 20px 0px;
-
+  margin: 20px 0px;
 }
 
-
 .page_timeLineText__yQS19 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #145899;
-    font-family: 'Poppins', sans-serif;
- 
-                                                
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #145899;
+  font-family: "Poppins", sans-serif;
 }
 
 .page_timeLineHeading__s7Wms {
-    font-family: 'Reddit Sans Condensed', sans-serif;
-    max-width: 525px;
-    margin: 15px 0px;
-    font-weight: 600;
-    font-size: 40px;
-                                                
+  font-family: "Reddit Sans Condensed", sans-serif;
+  max-width: 525px;
+  margin: 15px 0px;
+  font-weight: 600;
+  font-size: 40px;
 }
 
 .page_timeLineDescription__hnHyP {
-    max-width: 525px;
-    margin: 20px 0px;
-    font-size: 23px;
-    font-weight: 500;
-    letter-spacing: 1.5px;
-    text-align: center;
-    
-                                                
+  max-width: 525px;
+  margin: 20px 0px;
+  font-size: 23px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  text-align: center;
 }
 
 .page_timeLineImageContainer___yWhz {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
-@media only screen and (max-width: 670px ) and (min-width: 525px) {
-    .page_timeLineDescription__hnHyP {
-        font-size: 20px;
-        max-width: 450px;
-    }
-    
-    .page_timeLineImage2__YqWLh {
-        height: 250px;
-       
-    }
+@media only screen and (max-width: 670px) and (min-width: 525px) {
+  .page_timeLineDescription__hnHyP {
+    font-size: 20px;
+    max-width: 450px;
+  }
+
+  .page_timeLineImage2__YqWLh {
+    height: 250px;
+  }
 }
 
 @media only screen and (min-width: 425px) and (max-width: 525px) {
-    .page_timeLineDescription__hnHyP {
-        font-size: 18px;
-        max-width: 400px;
-    }
+  .page_timeLineDescription__hnHyP {
+    font-size: 18px;
+    max-width: 400px;
+  }
 
-    .page_timeLineHeading__s7Wms {
-        font-size: 30px;
-    }
+  .page_timeLineHeading__s7Wms {
+    font-size: 30px;
+  }
 
-    .page_timeLineImage2__YqWLh {
-        height: 200px;
-       
-    }
+  .page_timeLineImage2__YqWLh {
+    height: 200px;
+  }
 }
 
 @media only screen and (max-width: 425px) {
-    .page_timeLineDescription__hnHyP {
-        font-size: 15px;
-        max-width: 320px;
-    }
+  .page_timeLineDescription__hnHyP {
+    font-size: 15px;
+    max-width: 320px;
+  }
 
-    .page_timeLineHeading__s7Wms {
-        font-size: 30px;
-    }
+  .page_timeLineHeading__s7Wms {
+    font-size: 30px;
+  }
 
-    .page_timeLineImage2__YqWLh {
-        height: 150px;
-       
-    }
+  .page_timeLineImage2__YqWLh {
+    height: 150px;
+  }
 }
+

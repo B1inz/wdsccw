@@ -1,121 +1,175 @@
 .wrapper {
-    display: flex;
-    justify-content: space-between;
-    margin: 0;
-    padding: 0;
-    max-width: 100%;
-    height: 10rem;
-    flex-shrink: 0;
-    background: #013567;
-    color: white;
-    font-family: "Schibsted Grotesk", sans-serif;
-    align-items: center;
-  }
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  height: 10rem;
+  flex-shrink: 0;
+  background: #013567;
+  color: white;
+  font-family: "Schibsted Grotesk", sans-serif;
+  align-items: center;
+}
 
-  .navLinks {
-    display: flex;
-    gap: 30px;
-    margin-right: 20px;
-  
-  }
+.navLinks {
+  display: flex;
+  gap: 30px;
+  margin-right: 20px;
+}
 
-  .logoImgLink {
-    margin-right: 10px;
-  }
-  
-  .links {
-    
+.logoImgLink {
+  margin-right: 10px;
+}
 
-    text-decoration: none;
-    color:white;
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 400;
-    letter-spacing: 0.0375rem;
-    
-  }
+.links {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.0375rem;
+}
 
+.dropdown {
+  display: inline-table;
+  text-align-last: center;
+  position: relative;
+}
 
+.dropdown .dropBtn {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.0375rem;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  position: relative;
+}
 
-  .dropdown {
-    display: inline-table;
-    text-align-last: center;
-    position: relative;
-  }
+.dropMenu {
+  display: none;
+  position: absolute;
+  background-color: White;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 15%);
+}
 
-  .dropdown .dropBtn {
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 400;
-    letter-spacing: 0.0375rem;
-    border: none;
-    outline: none;
-    color: white;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-    position: relative;
-  }
+.dropMenu a {
+  float: none;
+  color: #000;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.0375rem;
+}
 
-  .dropMenu {
-    display: none;
-    position: absolute;
-    background-color: White;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,15%);
-  }
+.dropdown:hover .dropMenu {
+  display: block;
+}
 
-  .dropMenu a {
-    float: none;
-    color: #000;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: center;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 400;
-    letter-spacing: 0.0375rem;
-  }
+.links:hover,
+.dropBtn:hover {
+  color: #f60;
+}
 
-  .dropdown:hover .dropMenu {
-    display: block;
-  }
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  margin-right: 20px;
+  align-self: center;
+}
 
-  .links:hover, .dropBtn:hover{
-    color: #f60
-  }
+/* Sidebar styles */
+.sidebar {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 70vw;
+  max-width: 300px;
+  height: 100vh;
+  background: #013567;
+  color: white;
+  z-index: 2000;
+  flex-direction: column;
+  padding: 2rem 1rem;
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.2);
+  transform: translateX(100%);
+  transition: transform 0.3s;
+  font-family: "Schibsted Grotesk", sans-serif;
+}
+.sidebar.open {
+  display: flex;
+  transform: translateX(0);
+}
+.closeSidebar {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  align-self: flex-end;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+.sidebar a {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  color: white;
+  text-decoration: none;
+}
+.sidebarOverlay {
+  display: none;
+}
+.sidebarOverlay.open {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1500;
+}
 
-
-
-  
 @media only screen and (max-width: 1100px) {
-  .logoImg, .logoImgLink {
+  .logoImg,
+  .logoImgLink {
     width: 350px;
   }
 
   .navLinks {
     gap: 15px;
   }
-  
-
 }
 
-
-@media only screen and (max-width: 900px)  and (min-width: 700px){
-  .logoImg, .logoImgLink {
+@media only screen and (max-width: 900px) and (min-width: 700px) {
+  .logoImg,
+  .logoImgLink {
     width: 250px;
   }
 
   .navLinks {
     gap: 12px;
   }
-  
-  .dropdown .dropBtn{
+
+  .dropdown .dropBtn {
     font-size: 18px;
   }
 
@@ -124,16 +178,17 @@
   }
 }
 
-@media only screen and (max-width: 700px)  and (min-width: 500px){
-  .logoImg, .logoImgLink {
-    width: 150px;
+@media only screen and (max-width: 700px) and (min-width: 500px) {
+  .logoImg,
+  .logoImgLink {
+    width: 180px;
   }
 
   .navLinks {
     gap: 10px;
   }
-  
-  .dropdown .dropBtn{
+
+  .dropdown .dropBtn {
     font-size: 14px;
   }
 
@@ -143,15 +198,16 @@
 }
 
 @media only screen and (max-width: 500px) and (min-width: 350px) {
-  .logoImg, .logoImgLink {
-    width: 100px;
+  .logoImg,
+  .logoImgLink {
+    width: 140px;
   }
 
   .navLinks {
     gap: 8px;
   }
-  
-  .dropdown .dropBtn{
+
+  .dropdown .dropBtn {
     font-size: 12px;
   }
 
@@ -171,19 +227,32 @@
     padding: 5px 5px;
     width: 100px;
   }
-
 }
 
-@media only screen and (max-width: 350px){
-  .logoImg, .logoImgLink {
-    width: 80px;
+/* Show hamburger and sidebar only on mobile */
+@media only screen and (max-width: 800px) {
+  .navLinks {
+    display: none !important;
+  }
+  .hamburger {
+    display: block;
+  }
+  .sidebar {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .logoImg,
+  .logoImgLink {
+    width: 110px;
   }
 
   .navLinks {
     gap: 8px;
   }
-  
-  .dropdown .dropBtn{
+
+  .dropdown .dropBtn {
     font-size: 10px;
   }
 
@@ -203,5 +272,4 @@
     padding: 5px 5px;
     width: 100px;
   }
-
 }
